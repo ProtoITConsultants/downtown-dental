@@ -204,23 +204,18 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .sx-item { position: relative; border-bottom: 1px solid rgba(255, 255, 255, .14); }
 .sx-tab {
   all: unset; box-sizing: border-box; width: 100%; cursor: pointer;
-  display: grid; grid-template-columns: 48px 1fr 30px; align-items: center; gap: 0 10px; padding: 22px 0;
+  display: grid; grid-template-columns: 48px 1fr; align-items: center; gap: 0 10px; padding: 22px 0;
 }
 .sx-tab:focus-visible { outline: 2px solid #6fc0e2; outline-offset: 4px; border-radius: 6px; }
 .sx-n { font-size: 13px; letter-spacing: .06em; color: rgba(255, 255, 255, .4); font-variant-numeric: tabular-nums; transition: color .4s; }
 .sx-t { font-size: clamp(20px, 2vw, 28px); font-weight: 600; letter-spacing: -.02em; line-height: 1.2; color: rgba(255, 255, 255, .45); transition: color .4s; }
-.sx-ic { width: 30px; height: 30px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .25); display: grid; place-items: center; color: #fff; transition: background .4s, border-color .4s, transform .6s var(--ease); }
-.sx-ic svg { width: 12px; height: 12px; }
 .sx-tab:hover .sx-t { color: rgba(255, 255, 255, .82); }
 .sx-item.on .sx-t { color: #fff; }
 .sx-item.on .sx-n { color: #6fc0e2; }
-.sx-item.on .sx-ic { background: var(--brand); border-color: var(--brand); transform: rotate(45deg); }
 .sx-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .65s var(--ease); }
 .sx-item.on .sx-body { grid-template-rows: 1fr; }
 .sx-body > div { overflow: hidden; min-height: 0; }
-.sx-body p { padding: 0 40px 0 58px; font-size: 15.5px; line-height: 1.7; max-width: 54ch; }
-.sx-tag { display: inline-flex; align-items: center; gap: 8px; margin: 16px 0 26px 58px; padding: 7px 14px; border-radius: 99px; background: rgba(16, 121, 163, .24); color: #c4e6f4; font-size: 12.5px; font-weight: 600; letter-spacing: .03em; }
-.sx-tag::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #6fc0e2; }
+.sx-body p { padding: 0 40px 28px 58px; font-size: 15.5px; line-height: 1.7; max-width: 54ch; }
 .sx-mimg { display: none; }
 .sx-prog { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; overflow: hidden; }
 .sx-prog i { display: block; height: 100%; background: var(--brand); transform: scaleX(0); transform-origin: left; }
@@ -249,10 +244,9 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 @media (max-width: 900px) {
   .sx-head, .sx-main { grid-template-columns: 1fr; }
   .sx-stage, .sx-prog { display: none; }
-  .sx-tab { grid-template-columns: 38px 1fr 30px; }
+  .sx-tab { grid-template-columns: 38px 1fr; }
   .sx-mimg { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: var(--pos, 50% 50%); border-radius: 4px; margin-bottom: 18px; }
-  .sx-body p { padding: 0; }
-  .sx-tag { margin-left: 0; }
+  .sx-body p { padding: 0 0 24px; }
   .sx-grid { grid-template-columns: repeat(2, 1fr); }
   .sx-cell { min-height: 120px; padding: 18px 18px 20px; }
   .sx-cell.sx-call a { font-size: 15.5px; gap: 6px; }
@@ -507,47 +501,42 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
       <div class="sx-main">
         <div class="sx-list">
           <article class="sx-item on" id="svc-new">
-            <button class="sx-tab" type="button" id="sxt-0" aria-expanded="true" aria-controls="sxb-0"><span class="sx-n">01</span><span class="sx-t">New Patient Experience</span><span class="sx-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 1v10M1 6h10"/></svg></span></button>
+            <button class="sx-tab" type="button" id="sxt-0" aria-expanded="true" aria-controls="sxb-0"><span class="sx-n">01</span><span class="sx-t">New Patient Experience</span></button>
             <div class="sx-body" id="sxb-0" role="region" aria-labelledby="sxt-0"><div>
               <img class="sx-mimg" src="assets/img/svc-new.jpg" alt="" loading="lazy" style="--pos: 28% 55%">
               <p>First impressions are powerful. We believe the new patient experience is the foundation for a healthy and happy relationship based on trust and mutual respect. We take our time and listen to your needs.</p>
-              <span class="sx-tag">We accept all insurance</span>
             </div></div>
             <span class="sx-prog"><i></i></span>
           </article>
           <article class="sx-item" id="svc-general">
-            <button class="sx-tab" type="button" id="sxt-1" aria-expanded="false" aria-controls="sxb-1"><span class="sx-n">02</span><span class="sx-t">General Dentistry</span><span class="sx-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 1v10M1 6h10"/></svg></span></button>
+            <button class="sx-tab" type="button" id="sxt-1" aria-expanded="false" aria-controls="sxb-1"><span class="sx-n">02</span><span class="sx-t">General Dentistry</span></button>
             <div class="sx-body" id="sxb-1" role="region" aria-labelledby="sxt-1"><div>
               <img class="sx-mimg" src="assets/img/svc-general.jpg" alt="" loading="lazy">
               <p>Although we are a downtown dental clinic, we welcome all ages. We think of our team as a family and encourage you to make our office your dental home for years to come.</p>
-              <span class="sx-tag">All ages welcome</span>
             </div></div>
             <span class="sx-prog"><i></i></span>
           </article>
           <article class="sx-item" id="svc-cosmetic">
-            <button class="sx-tab" type="button" id="sxt-2" aria-expanded="false" aria-controls="sxb-2"><span class="sx-n">03</span><span class="sx-t">Cosmetic Dentistry</span><span class="sx-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 1v10M1 6h10"/></svg></span></button>
+            <button class="sx-tab" type="button" id="sxt-2" aria-expanded="false" aria-controls="sxb-2"><span class="sx-n">03</span><span class="sx-t">Cosmetic Dentistry</span></button>
             <div class="sx-body" id="sxb-2" role="region" aria-labelledby="sxt-2"><div>
               <img class="sx-mimg" src="assets/img/svc-cosmetic.jpg" alt="" loading="lazy" style="--pos: 50% 25%">
               <p>Beauty begins within from a sense of wellbeing that transcends physical appearance. From tooth whitening to full cosmetic procedures, we help your inner beauty shine.</p>
-              <span class="sx-tag">Beautiful you.</span>
             </div></div>
             <span class="sx-prog"><i></i></span>
           </article>
           <article class="sx-item" id="svc-sports">
-            <button class="sx-tab" type="button" id="sxt-3" aria-expanded="false" aria-controls="sxb-3"><span class="sx-n">04</span><span class="sx-t">Sports Dentistry</span><span class="sx-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 1v10M1 6h10"/></svg></span></button>
+            <button class="sx-tab" type="button" id="sxt-3" aria-expanded="false" aria-controls="sxb-3"><span class="sx-n">04</span><span class="sx-t">Sports Dentistry</span></button>
             <div class="sx-body" id="sxb-3" role="region" aria-labelledby="sxt-3"><div>
               <img class="sx-mimg" src="assets/img/svc-sports.jpg" alt="" loading="lazy" style="--pos: 30% 40%">
               <p>Our dentists value using mouth guards to protect an athlete’s teeth, mouth, gums, and possibly brain (from concussions through impact). Professional custom-made mouth guards provide optimal protection.</p>
-              <span class="sx-tag">Official Dentist of the Calgary Flames</span>
             </div></div>
             <span class="sx-prog"><i></i></span>
           </article>
           <article class="sx-item" id="svc-surgery">
-            <button class="sx-tab" type="button" id="sxt-4" aria-expanded="false" aria-controls="sxb-4"><span class="sx-n">05</span><span class="sx-t">Dental Surgery</span><span class="sx-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 1v10M1 6h10"/></svg></span></button>
+            <button class="sx-tab" type="button" id="sxt-4" aria-expanded="false" aria-controls="sxb-4"><span class="sx-n">05</span><span class="sx-t">Dental Surgery</span></button>
             <div class="sx-body" id="sxb-4" role="region" aria-labelledby="sxt-4"><div>
               <img class="sx-mimg" src="assets/img/svc-surgery.jpg" alt="" loading="lazy">
               <p>We can offer some oral surgical procedures within our dental facility, with some utilizing IV sedation. When it is beyond our expertise, we will assist you in referring out to a specialist.</p>
-              <span class="sx-tag">IV sedation for some procedures</span>
             </div></div>
             <span class="sx-prog"><i></i></span>
           </article>

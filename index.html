@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#f7f7f5">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/brand/logomark.svg">
 <link rel="preload" as="image" href="assets/img/hero.jpg">
 <style>
@@ -35,12 +35,12 @@ html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 body {
   margin: 0; background: var(--bg); color: var(--body);
-  font: 400 16px/1.6 'Open Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font: 400 16px/1.6 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
 }
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
-h1, h2, h3 { margin: 0; color: var(--ink); font-weight: 600; letter-spacing: -.02em; }
+h1, h2, h3 { margin: 0; color: var(--ink); font-weight: 500; letter-spacing: -.02em; }
 p, figure, blockquote { margin: 0; }
 ul, ol { list-style: none; margin: 0; padding: 0; }
 :focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; border-radius: 4px; }
@@ -63,7 +63,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   --c: #fff;
   display: inline-flex; align-items: center; gap: 10px; height: 46px; padding: 0 24px;
   border: 1.5px solid var(--c); border-radius: 99px; color: var(--c);
-  font: 600 13px/1 'Open Sans', sans-serif; letter-spacing: .14em; text-transform: uppercase;
+  font: 600 13px/1 'Figtree', sans-serif; letter-spacing: .14em; text-transform: uppercase;
   position: relative; overflow: hidden; isolation: isolate;
   transition: color .5s var(--ease);
 }
@@ -129,22 +129,22 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
               linear-gradient(0deg, rgba(20, 22, 26, .3), rgba(20, 22, 26, 0) 40%);
 }
 .hero-in { position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; justify-content: center; }
-.hero h1 { color: #fff; font-size: clamp(44px, 6.1vw, 88px); line-height: 1.02; letter-spacing: -.03em; font-weight: 600; max-width: 9.4em; }
+.hero h1 { color: #fff; font-size: clamp(42px, 4.75vw, 80px); line-height: 1.04; letter-spacing: -.03em; font-weight: 600; max-width: 9.4em; }
 .eyebrow { margin-top: clamp(22px, 2.4vw, 32px); font-size: clamp(11px, 1vw, 14px); font-weight: 500; letter-spacing: .3em; text-transform: uppercase; }
-.lede { margin-top: 14px; max-width: 36ch; font-size: clamp(15px, 1.2vw, 17px); line-height: 1.55; color: rgba(255, 255, 255, .86); }
 .hero .btn { margin-top: clamp(24px, 2.6vw, 34px); align-self: flex-start; }
 
 /* ---------- values ---------- */
-.values { padding: clamp(72px, 8vw, 112px) 0 clamp(64px, 7vw, 96px); background: var(--bg); }
+.values { padding: clamp(52px, 4.6vw, 70px) 0 clamp(48px, 4.2vw, 64px); background: var(--bg); }
+.values .h2 { font-size: clamp(28px, 2.6vw, 40px); }
 .h2 { font-size: clamp(30px, 3.4vw, 46px); line-height: 1.12; text-align: center; }
-.vgrid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: clamp(44px, 5vw, 68px); }
+.vgrid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: clamp(30px, 2.8vw, 42px); }
 .v { position: relative; padding: 0 clamp(24px, 3.2vw, 46px); }
 .v:first-child { padding-left: 0; }
 .v:last-child { padding-right: 0; }
 .v + .v::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--line); }
 .v .rule { display: block; width: 72px; height: 1px; background: #c9c9c4; transform-origin: left; }
 .v .n { display: block; margin-top: 16px; font-size: 13px; color: var(--mute); letter-spacing: .04em; }
-.v h3 { margin-top: 18px; font-size: clamp(18px, 1.5vw, 21px); font-weight: 600; letter-spacing: -.01em; }
+.v h3 { margin-top: 18px; font-size: clamp(18px, 1.5vw, 21px); font-weight: 400; letter-spacing: -.01em; }
 .v p { margin-top: 10px; font-size: 15.5px; line-height: 1.6; max-width: 34ch; }
 
 /* ---------- about ---------- */
@@ -161,14 +161,14 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .quote p { font-size: clamp(18px, 1.5vw, 21px); line-height: 1.45; color: var(--ink); letter-spacing: -.01em; }
 .quote cite { display: block; margin-top: 10px; font-style: normal; font-size: 13px; color: var(--mute); letter-spacing: .04em; }
 .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 34px; padding-top: 28px; border-top: 1px solid var(--line); }
-.pillars h3 { font-size: 16.5px; font-weight: 600; }
+.pillars h3 { font-size: 17px; font-weight: 500; }
 .pillars p { margin-top: 8px; font-size: 14.5px; line-height: 1.6; }
 .docs { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: clamp(64px, 7vw, 96px); border-top: 1px solid var(--line); }
 .doc { padding: 26px clamp(18px, 2.4vw, 32px) 0; }
 .doc:first-child { padding-left: 0; }
 .doc + .doc { border-left: 1px solid var(--line); }
 .doc .kicker { font-size: 11px; }
-.doc h3 { margin-top: 10px; font-size: clamp(19px, 1.6vw, 22px); font-weight: 600; }
+.doc h3 { margin-top: 10px; font-size: clamp(20px, 1.8vw, 24px); font-weight: 400; }
 .doc p { margin-top: 8px; font-size: 14.5px; line-height: 1.6; max-width: 32ch; }
 
 /* ---------- photo bands (team + cta) ---------- */
@@ -177,16 +177,14 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .band-img img { width: 100%; height: 100%; object-fit: cover; }
 .band::after { content: ''; position: absolute; inset: 0; pointer-events: none; }
 .band-in { position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-.band h2 { color: #fff; font-size: clamp(38px, 4.9vw, 70px); line-height: 1.04; letter-spacing: -.03em; }
+.band h2 { color: #fff; font-weight: 600; font-size: clamp(36px, 4.2vw, 64px); line-height: 1.04; letter-spacing: -.03em; }
 .band .btn { margin-top: clamp(22px, 2.4vw, 32px); }
-.team { height: clamp(420px, 42vw, 600px); }
+.team { height: clamp(380px, 28.5vw, 560px); }
 .team .band-img img { object-position: 50% 28%; }
 .team::after { background: radial-gradient(ellipse 48% 46% at 50% 70%, rgba(18, 20, 24, .5), rgba(18, 20, 24, 0) 78%), linear-gradient(0deg, rgba(18, 20, 24, .3), rgba(18, 20, 24, 0) 45%); }
-.team .band-in { justify-content: flex-end; padding-bottom: clamp(48px, 6vw, 84px); }
-.cta { height: clamp(380px, 34vw, 500px); }
-.cta::after { background: rgba(28, 26, 24, .56); }
-.cta .kicker { color: rgba(255, 255, 255, .8); margin-bottom: 18px; }
-.cta .sub { margin-top: 16px; max-width: 44ch; font-size: clamp(15px, 1.2vw, 17px); color: rgba(255, 255, 255, .86); }
+.team .band-in { justify-content: flex-end; padding-bottom: clamp(30px, 2.8vw, 46px); }
+.cta { height: clamp(260px, 17.5vw, 360px); }
+.cta::after { background: rgba(32, 28, 24, .5); }
 
 /* ---------- services explorer ---------- */
 .sx { position: relative; overflow: hidden; padding: clamp(84px, 9vw, 132px) 0 clamp(80px, 8vw, 120px); background: #0d2a37; color: rgba(255, 255, 255, .68); }
@@ -208,7 +206,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 }
 .sx-tab:focus-visible { outline: 2px solid #6fc0e2; outline-offset: 4px; border-radius: 6px; }
 .sx-n { font-size: 13px; letter-spacing: .06em; color: rgba(255, 255, 255, .4); font-variant-numeric: tabular-nums; transition: color .4s; }
-.sx-t { font-size: clamp(20px, 2vw, 28px); font-weight: 600; letter-spacing: -.02em; line-height: 1.2; color: rgba(255, 255, 255, .45); transition: color .4s; }
+.sx-t { font-size: clamp(20px, 2vw, 28px); font-weight: 500; letter-spacing: -.02em; line-height: 1.2; color: rgba(255, 255, 255, .45); transition: color .4s; }
 .sx-tab:hover .sx-t { color: rgba(255, 255, 255, .82); }
 .sx-item.on .sx-t { color: #fff; }
 .sx-item.on .sx-n { color: #6fc0e2; }
@@ -233,7 +231,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .sx-grid { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 18px; border-top: 1px solid rgba(255, 255, 255, .14); border-left: 1px solid rgba(255, 255, 255, .14); }
 .sx-cell { position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 148px; padding: 22px 24px 26px; border-right: 1px solid rgba(255, 255, 255, .14); border-bottom: 1px solid rgba(255, 255, 255, .14); transition: background .5s; }
 .sx-cell:hover { background: rgba(16, 121, 163, .16); }
-.sx-cell h3 { color: #fff; font-size: clamp(17px, 1.4vw, 19px); font-weight: 600; letter-spacing: -.01em; }
+.sx-cell h3 { color: #fff; font-size: clamp(17px, 1.4vw, 19px); font-weight: 500; letter-spacing: -.01em; }
 .sx-cell.sx-call { background: var(--brand); color: #fff; }
 .sx-cell.sx-call:hover { background: var(--brand-d); }
 .sx-cell.sx-call p { font-size: 14px; color: rgba(255, 255, 255, .85); }
@@ -253,11 +251,10 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 }
 
 /* ---------- trust ---------- */
-.trust { padding: clamp(60px, 6.5vw, 92px) 0 clamp(56px, 6vw, 84px); }
-.trust .h2 { font-size: clamp(26px, 2.7vw, 36px); }
-.trust-sub { margin: 14px auto 0; max-width: 56ch; text-align: center; font-size: 15.5px; }
+.trust { padding: clamp(44px, 3.9vw, 58px) 0 clamp(36px, 3.4vw, 50px); }
+.trust .h2 { font-size: clamp(26px, 2.4vw, 36px); }
 .marquee {
-  margin-top: clamp(36px, 4vw, 52px); overflow: hidden;
+  margin-top: clamp(22px, 2.3vw, 34px); overflow: hidden;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
 }
@@ -275,9 +272,9 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .marquee.static .track { width: auto; flex-wrap: wrap; justify-content: center; gap: 28px 0; }
 
 /* ---------- footer ---------- */
-.foot { background: var(--bg); padding: clamp(56px, 6vw, 84px) 0 34px; }
+.foot { background: var(--bg); padding: clamp(44px, 3.8vw, 58px) 0 30px; }
 .fgrid { display: grid; grid-template-columns: 1.15fr .8fr 1.15fr 1.15fr; gap: clamp(28px, 4vw, 56px); align-items: start; }
-.foot .logo img { height: 52px; }
+.foot .logo img { height: 17px; }
 .fabout p { margin-top: 30px; font-size: 14.5px; line-height: 1.65; max-width: 27ch; color: var(--body); }
 .fh { font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--mute); font-weight: 500; }
 .flinks ul { margin-top: 18px; display: grid; gap: 8px; }
@@ -290,7 +287,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .fcontact small { display: block; color: var(--mute); font-size: 13px; }
 .fmap { position: relative; aspect-ratio: 1.5; overflow: hidden; background: #e6e6e3; border: 1px solid var(--line); }
 .fmap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; filter: grayscale(1) contrast(.92) brightness(1.04); }
-.fbase { display: flex; justify-content: space-between; gap: 20px; margin-top: clamp(48px, 5vw, 72px); font-size: 12.5px; color: var(--body); }
+.fbase { display: flex; justify-content: space-between; gap: 20px; margin-top: clamp(36px, 3.4vw, 52px); font-size: 12.5px; color: var(--body); }
 .fbase nav { display: flex; gap: 30px; }
 .fbase a:hover { color: var(--brand); }
 
@@ -346,7 +343,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   .docs { gap: 0; }
   .doc, .doc:first-child { padding: 22px 0; }
   .doc + .doc { border-left: 0; border-top: 1px solid var(--line); }
-  .team { height: 480px; }
+  .team { height: 440px; }
   .lg img { height: calc(var(--h, 36px) * .8); }
   .fgrid { grid-template-columns: 1fr; }
   .fbase { flex-direction: column-reverse; }
@@ -359,7 +356,6 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 @media (max-height: 600px) {
   .hero h1 { font-size: clamp(30px, 10vh, 56px); }
   .hero .eyebrow { margin-top: 14px; }
-  .hero .lede { display: none; }
   .hero .btn { margin-top: 18px; height: 42px; }
   .hero-in { justify-content: center; padding-bottom: 0; }
 }
@@ -456,9 +452,8 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
     <div class="hero-img"><img src="assets/img/hero.jpg" alt="The Downtown Dental reception and waiting area under the skylight, 215 9 Ave SW, Calgary" fetchpriority="high"></div>
     <div class="wrap hero-in">
       <h1><span class="m"><span>A healthier you</span></span><span class="m"><span>starts with</span></span><span class="m"><span>a smile.</span></span></h1>
-      <p class="eyebrow">Your dentist in downtown Calgary</p>
-      <p class="lede">Conveniently located at the core of our vibrant city, we serve patients from every corner of Calgary.</p>
-      <a class="btn mag" href="#book">Request an appointment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <p class="eyebrow">Dental care in downtown Calgary</p>
+      <a class="btn mag" href="#book">Book your visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     </div>
   </section>
 
@@ -470,19 +465,19 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
           <span class="rule"></span>
           <span class="n">01.</span>
           <h3>Personalized Treatment</h3>
-          <p>We recognize each of our patients are unique, and our goal is to tailor a comprehensive dental treatment plan for you and your ever-changing needs.</p>
+          <p>Every smile is unique. We create customized treatment plans to fit your goals and lifestyle.</p>
         </article>
         <article class="v">
           <span class="rule"></span>
           <span class="n">02.</span>
-          <h3>Lifestyle Meets Health</h3>
-          <p>We look to balance overall dental health, function, and aesthetics, so good oral health lets you enjoy all of life’s pleasures.</p>
+          <h3>Modern Technology</h3>
+          <p>We use advanced tools and techniques for precise, comfortable and efficient care.</p>
         </article>
         <article class="v">
           <span class="rule"></span>
           <span class="n">03.</span>
           <h3>A Comfortable Experience</h3>
-          <p>We take our time and listen to your needs. Our team serves every patient with humour, professionalism, compassion and genuine care.</p>
+          <p>From the moment you walk in, our friendly team is here to make you feel at ease.</p>
         </article>
       </div>
     </div>
@@ -609,7 +604,6 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   <section class="trust" aria-labelledby="trust-h">
     <div class="wrap">
       <h2 class="h2" id="trust-h"><span class="m"><span>Trusted care. Recognized expertise.</span></span></h2>
-      <p class="trust-sub">Official Dentist of the Calgary Flames. While we are proud of our relationship with the NHL’s Calgary Flames, we love working with young athletes as well.</p>
     </div>
     <div class="marquee" id="marquee">
       <ul class="track" id="track">
@@ -626,10 +620,8 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   <section class="band cta" id="book">
     <div class="band-img"><img src="assets/img/cta.jpg" alt="" loading="lazy"></div>
     <div class="wrap band-in">
-      <p class="kicker">Health and lifestyle are at our core</p>
       <h2><span class="m"><span>Let’s get started.</span></span></h2>
-      <p class="sub">Downtown Calgary Dentists are now accepting new patients. We accept all insurance.</p>
-      <a class="btn mag" href="tel:+14032641736">Request an appointment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="btn mag" href="tel:+14032641736">Book your visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     </div>
   </section>
 </main>
@@ -638,8 +630,8 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   <div class="wrap">
     <div class="fgrid">
       <div class="fabout">
-        <a class="logo" href="#top"><img src="assets/brand/logo-stacked.svg" alt="Downtown Dental, back to top" width="483" height="160" loading="lazy"></a>
-        <p>Now accepting new patients. Conveniently located on 9th Avenue SW, we serve patients from all over Calgary.</p>
+        <a class="logo" href="#top"><img src="assets/brand/logo-primary.svg" alt="Downtown Dental, back to top" width="778" height="64" loading="lazy"></a>
+        <p>Providing modern, comfortable and personalized dental care in the heart of Calgary.</p>
       </div>
       <div class="flinks">
         <h2 class="fh">Quick links</h2>
@@ -792,7 +784,7 @@ if (hasG && !reduce) {
     .fromTo('.hero', { clipPath: 'inset(3% 3% 0% 3% round 24px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', duration: 1.5, ease: 'expo.inOut' }, .1)
     .from('.hero-img img', { scale: 1.22, duration: 2, ease: 'expo.out' }, .2)
     .from('.hero h1 .m > span', { yPercent: 110, duration: 1.2, ease: 'expo.out', stagger: .08 }, .75)
-    .from('.hero .eyebrow, .hero .lede, .hero .btn', { y: 26, opacity: 0, duration: 1, ease: 'power3.out', stagger: .1 }, 1.05);
+    .from('.hero .eyebrow, .hero .btn', { y: 26, opacity: 0, duration: 1, ease: 'power3.out', stagger: .1 }, 1.05);
   gsap.to('.hero-img', { yPercent: 10, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
   gsap.to('.hero-in', { yPercent: -14, opacity: .2, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
 
@@ -827,7 +819,7 @@ if (hasG && !reduce) {
   gsap.from('.sx-cell', { y: 30, opacity: 0, duration: 1, ease: 'expo.out', stagger: .05, scrollTrigger: { trigger: '.sx-grid', start: 'top 88%' } });
 
   // trust
-  gsap.from('.trust-sub, .marquee', { y: 30, opacity: 0, duration: 1.1, ease: 'expo.out', stagger: .1, scrollTrigger: { trigger: '.trust', start: 'top 80%' } });
+  gsap.from('.marquee', { y: 30, opacity: 0, duration: 1.1, ease: 'expo.out', stagger: .1, scrollTrigger: { trigger: '.trust', start: 'top 80%' } });
 
   // footer
   gsap.from('.fgrid > *', { y: 40, opacity: 0, duration: 1.1, ease: 'expo.out', stagger: .08, scrollTrigger: { trigger: '.fgrid', start: 'top 90%' } });

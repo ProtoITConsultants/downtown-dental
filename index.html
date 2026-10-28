@@ -85,19 +85,36 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .nav-l { justify-content: flex-end; }
 .nav-r { justify-content: flex-start; }
 .nav-r .phone { margin-left: auto; }
-.nav-l a, .nav-r .lk { position: relative; padding: 6px 0; white-space: nowrap; }
-.nav-l a::after, .nav-r .lk::after {
+.nav-l > a, .dd-t, .nav-r .lk { position: relative; padding: 6px 0; white-space: nowrap; }
+.nav-l > a::after, .dd-t::after, .nav-r .lk::after {
   content: ''; position: absolute; left: 0; right: 0; bottom: 1px; height: 1px; background: var(--navy);
   transform: scaleX(0); transform-origin: right; transition: transform .5s var(--ease);
 }
-.nav-l a:hover::after, .nav-r .lk:hover::after { transform: scaleX(1); transform-origin: left; }
+.nav-l > a:hover::after, .dd:hover .dd-t::after, .nav-r .lk:hover::after { transform: scaleX(1); transform-origin: left; }
+
+/* dropdowns */
+.dd { position: relative; }
+.dd-t { display: inline-flex; align-items: center; gap: 5px; }
+.dd-t svg { width: 11px; height: 11px; transition: transform .45s var(--ease); }
+.dd:hover .dd-t svg, .dd:focus-within .dd-t svg { transform: rotate(180deg); }
+.dd-p {
+  position: absolute; top: 100%; left: 50%; padding-top: 16px; z-index: 5;
+  opacity: 0; visibility: hidden; transform: translate(-50%, 10px);
+  transition: opacity .3s, transform .5s var(--ease), visibility 0s .3s;
+}
+.dd:hover .dd-p, .dd:focus-within .dd-p { opacity: 1; visibility: visible; transform: translate(-50%, 0); transition: opacity .3s, transform .5s var(--ease); }
+.dd-p ul { display: grid; min-width: 230px; padding: 10px; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 26px 50px -26px rgba(30, 40, 60, .4); }
+.dd-2 ul { grid-template-columns: repeat(2, minmax(0, 1fr)); min-width: 460px; column-gap: 4px; }
+.dd-p a { display: block; padding: 9px 14px; border-radius: 8px; font-size: 14px; color: var(--ink); white-space: nowrap; transition: background .3s, color .3s; }
+.dd-p a:hover, .dd-p a:focus-visible { background: var(--bg); color: var(--navy); }
+
 .phone {
-  display: inline-flex; align-items: center; height: 40px; padding: 0 20px;
+  display: inline-flex; align-items: center; justify-content: center; height: 40px; padding: 0 20px;
   border: 1.5px solid var(--navy); border-radius: 99px; color: var(--ink); font-weight: 500; font-size: 14px; white-space: nowrap;
   transition: background .4s, color .4s;
 }
 .phone:hover { background: var(--navy); color: #fff; }
-.phone .pc { display: none; }
+.phone .pi { display: none; width: 18px; height: 18px; }
 .burger { display: none; }
 .mnav { display: none; }
 
@@ -134,7 +151,8 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .about-grid { display: grid; grid-template-columns: 5fr 6fr; gap: clamp(36px, 6vw, 96px); align-items: center; }
 .about-img { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: #dfe4ea; }
 .about-img img { position: absolute; inset: -6% 0; width: 100%; height: 112%; object-fit: cover; object-position: 50% 20%; }
-.about-img figcaption { position: absolute; left: 18px; bottom: 16px; z-index: 2; font-size: 13px; color: #fff; letter-spacing: .02em; text-shadow: 0 1px 12px rgba(0, 0, 0, .35); }
+.about-img::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 38%; z-index: 1; pointer-events: none; background: linear-gradient(0deg, rgba(14, 18, 26, .72), rgba(14, 18, 26, 0)); }
+.about-img figcaption { position: absolute; left: 20px; right: 20px; bottom: 18px; z-index: 2; font-size: 14px; font-weight: 500; color: #fff; letter-spacing: .01em; text-shadow: 0 1px 10px rgba(0, 0, 0, .4); }
 .about-txt .kicker { margin-bottom: 20px; }
 .h2l { font-size: clamp(26px, 2.6vw, 38px); line-height: 1.18; letter-spacing: -.02em; }
 .about-txt > p { margin-top: 22px; font-size: 16px; line-height: 1.7; max-width: 56ch; }
@@ -172,7 +190,6 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 /* ---------- services ---------- */
 .svc { padding: clamp(80px, 9vw, 128px) 0; }
 .svc-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(36px, 6vw, 96px); align-items: start; }
-.svc-l { position: sticky; top: 112px; }
 .svc-l .kicker { margin-bottom: 20px; }
 .svc-l h2 { font-size: clamp(32px, 3.4vw, 46px); line-height: 1.1; }
 .svc-l > p { margin-top: 18px; font-size: 16px; line-height: 1.7; max-width: 42ch; }
@@ -237,7 +254,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 /* ---------- responsive ---------- */
 @media (max-width: 1300px) {
   .nav-l, .nav-r .lk { display: none; }
-  .nav-in { grid-template-columns: auto 1fr auto; }
+  .nav-in { grid-template-columns: auto 1fr auto; column-gap: 12px; }
   .nav-in .logo { grid-column: 1; grid-row: 1; justify-self: start; }
   .nav-r { grid-column: 3; grid-row: 1; gap: 10px; }
   .burger {
@@ -256,16 +273,25 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
     clip-path: inset(0 0 100% 0); transition: clip-path .6s var(--ease); box-shadow: 0 20px 30px -20px rgba(30, 40, 60, .3);
   }
   .nav.open .mnav { clip-path: inset(0 0 0 0); }
-  .mnav ul { padding: 8px var(--gut) 28px; display: grid; }
-  .mnav a { display: block; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 22px; color: var(--ink); letter-spacing: -.01em; }
+  .mnav { max-height: calc(100svh - var(--nav-h)); overflow-y: auto; overscroll-behavior: contain; }
+  .mnav > ul { padding: 8px var(--gut) 28px; display: grid; }
+  .mnav > ul > li > a, .mnav summary { display: block; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 22px; color: var(--ink); letter-spacing: -.01em; }
+  .mnav summary { list-style: none; cursor: pointer; position: relative; }
+  .mnav summary::-webkit-details-marker { display: none; }
+  .mnav summary::after { content: '+'; position: absolute; right: 2px; top: 50%; transform: translateY(-50%); font-size: 24px; font-weight: 300; color: var(--mute); transition: transform .4s var(--ease); }
+  .mnav details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+  .msub { display: grid; padding: 6px 0 12px 14px; border-bottom: 1px solid var(--line); }
+  .msub a { display: block; padding: 8px 0; font-size: 16px; color: var(--body); }
   .about-grid, .svc-grid { grid-template-columns: 1fr; }
   .about-img { aspect-ratio: 4 / 3; }
-  .svc-l { position: static; }
   .fgrid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 760px) {
-  .phone { height: 38px; padding: 0 14px; font-size: 13px; }
+  .phone { width: 42px; height: 42px; padding: 0; border-radius: 50%; }
+  .phone .pn { display: none; }
+  .phone .pi { display: block; }
   .logo { font-size: 18px; }
+  .about-img figcaption { left: 16px; bottom: 14px; font-size: 13.5px; }
   .hero-img img { object-position: 30% 50%; }
   .hero::after { background: linear-gradient(0deg, rgba(20, 22, 26, .78) 0%, rgba(20, 22, 26, .4) 55%, rgba(20, 22, 26, .15) 100%); }
   .hero-in { justify-content: flex-end; padding-bottom: 52px; }
@@ -283,16 +309,17 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   .fgrid { grid-template-columns: 1fr; }
   .fbase { flex-direction: column-reverse; }
 }
+@media (max-width: 360px) {
+  .nav-in .logo { font-size: 15.5px; }
+  .nav-r { gap: 8px; }
+  .phone, .burger { width: 40px; height: 40px; }
+}
 @media (max-height: 600px) {
   .hero h1 { font-size: clamp(30px, 10vh, 56px); }
   .hero .eyebrow { margin-top: 14px; }
   .hero .lede { display: none; }
   .hero .btn { margin-top: 18px; height: 42px; }
   .hero-in { justify-content: center; padding-bottom: 0; }
-}
-@media (max-width: 420px) {
-  .phone .pn { display: none; }
-  .phone .pc { display: inline; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: .01ms !important; }
@@ -306,25 +333,77 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   <div class="wrap nav-in">
     <nav class="nav-l" aria-label="Primary">
       <a href="#top">Home</a>
-      <a href="#services">Services</a>
+      <div class="dd">
+        <a class="dd-t" href="#services">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></a>
+        <div class="dd-p dd-2">
+          <ul>
+            <li><a href="#svc-new">New Patient Experience</a></li>
+            <li><a href="#more-services">Emergency Dental</a></li>
+            <li><a href="#svc-general">General Dentistry</a></li>
+            <li><a href="#svc-cosmetic">Cosmetic Dentistry</a></li>
+            <li><a href="#svc-sports">Sport Dentistry</a></li>
+            <li><a href="#more-services">Nightguards &amp; Bruxism</a></li>
+            <li><a href="#svc-surgery">Dental Surgery</a></li>
+            <li><a href="#more-services">Dental Implants</a></li>
+            <li><a href="#more-services">Sedation Dentistry</a></li>
+            <li><a href="#more-services">Wisdom Teeth</a></li>
+            <li><a href="#more-services">Botox</a></li>
+          </ul>
+        </div>
+      </div>
       <a href="#team">Our Team</a>
-      <a href="#about">About</a>
+      <div class="dd">
+        <a class="dd-t" href="#about">About <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></a>
+        <div class="dd-p">
+          <ul>
+            <li><a href="#dentists">Meet Our Dentists</a></li>
+            <li><a href="#team">Meet The Team</a></li>
+            <li><a href="#contact">Our Office</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <a class="logo" href="#top" aria-label="Downtown Dental, home"><b>Downtown</b><i>Dental</i></a>
     <div class="nav-r">
       <a class="lk" href="#book">New Patients</a>
       <a class="lk" href="#invisalign">Invisalign</a>
       <a class="lk" href="#contact">Contact</a>
-      <a class="phone mag" href="tel:+14032641736" aria-label="Call (403) 264-1736"><span class="pn">(403) 264-1736</span><span class="pc">Call</span></a>
+      <a class="phone mag" href="tel:+14032641736" aria-label="Call (403) 264-1736"><svg class="pi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 7.2 7.2l1.4-2.1 4.2 1.6V19a1.6 1.6 0 0 1-1.7 1.6A16.5 16.5 0 0 1 3.4 5.2 1.6 1.6 0 0 1 5 3.5z"/></svg><span class="pn">(403) 264-1736</span></a>
       <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
     </div>
   </div>
-  <nav class="mnav" id="mnav" aria-label="Mobile">
+  <nav class="mnav" id="mnav" aria-label="Mobile" data-lenis-prevent>
     <ul>
       <li><a href="#top">Home</a></li>
-      <li><a href="#services">Services</a></li>
+      <li>
+        <details>
+          <summary>Services</summary>
+          <ul class="msub">
+            <li><a href="#svc-new">New Patient Experience</a></li>
+            <li><a href="#more-services">Emergency Dental</a></li>
+            <li><a href="#svc-general">General Dentistry</a></li>
+            <li><a href="#svc-cosmetic">Cosmetic Dentistry</a></li>
+            <li><a href="#svc-sports">Sport Dentistry</a></li>
+            <li><a href="#more-services">Nightguards &amp; Bruxism</a></li>
+            <li><a href="#svc-surgery">Dental Surgery</a></li>
+            <li><a href="#more-services">Dental Implants</a></li>
+            <li><a href="#more-services">Sedation Dentistry</a></li>
+            <li><a href="#more-services">Wisdom Teeth</a></li>
+            <li><a href="#more-services">Botox</a></li>
+          </ul>
+        </details>
+      </li>
       <li><a href="#team">Our Team</a></li>
-      <li><a href="#about">About</a></li>
+      <li>
+        <details>
+          <summary>About</summary>
+          <ul class="msub">
+            <li><a href="#dentists">Meet Our Dentists</a></li>
+            <li><a href="#team">Meet The Team</a></li>
+            <li><a href="#contact">Our Office</a></li>
+          </ul>
+        </details>
+      </li>
       <li><a href="#book">New Patients</a></li>
       <li><a href="#invisalign">Invisalign</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -417,15 +496,15 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
       </div>
       <div class="svc-r">
         <ol class="rows">
-          <li class="row"><span class="n">01</span><h3>New Patient Experience</h3><p>First impressions are powerful. We believe the new patient experience is the foundation for a healthy and happy relationship based on trust and mutual respect. We accept all insurance.</p></li>
-          <li class="row"><span class="n">02</span><h3>General Dentistry</h3><p>Although we are a downtown dental clinic, we welcome all ages. We think of our team as a family and encourage you to make our office your dental home for years to come.</p></li>
-          <li class="row"><span class="n">03</span><h3>Cosmetic Dentistry</h3><p>Beauty begins within from a sense of wellbeing that transcends physical appearance. Simply put, there is not a single aesthetic standard in which a person should fit.</p></li>
-          <li class="row"><span class="n">04</span><h3>Sports Dentistry</h3><p>Custom-made mouth guards protect an athlete’s teeth, mouth, gums, and possibly brain from concussions through impact. Professional mouth guards provide optimal protection.</p></li>
-          <li class="row"><span class="n">05</span><h3>Dental Surgery</h3><p>We offer some oral surgical procedures within our dental facility, with some utilizing IV sedation. When it is beyond our expertise, we will assist you in referring out to a specialist.</p></li>
+          <li class="row" id="svc-new"><span class="n">01</span><h3>New Patient Experience</h3><p>First impressions are powerful. We believe the new patient experience is the foundation for a healthy and happy relationship based on trust and mutual respect. We accept all insurance.</p></li>
+          <li class="row" id="svc-general"><span class="n">02</span><h3>General Dentistry</h3><p>Although we are a downtown dental clinic, we welcome all ages. We think of our team as a family and encourage you to make our office your dental home for years to come.</p></li>
+          <li class="row" id="svc-cosmetic"><span class="n">03</span><h3>Cosmetic Dentistry</h3><p>Beauty begins within from a sense of wellbeing that transcends physical appearance. Simply put, there is not a single aesthetic standard in which a person should fit.</p></li>
+          <li class="row" id="svc-sports"><span class="n">04</span><h3>Sports Dentistry</h3><p>Custom-made mouth guards protect an athlete’s teeth, mouth, gums, and possibly brain from concussions through impact. Professional mouth guards provide optimal protection.</p></li>
+          <li class="row" id="svc-surgery"><span class="n">05</span><h3>Dental Surgery</h3><p>We offer some oral surgical procedures within our dental facility, with some utilizing IV sedation. When it is beyond our expertise, we will assist you in referring out to a specialist.</p></li>
         </ol>
         <div class="also" id="invisalign">
           <p class="kicker">Also at Downtown Dental</p>
-          <ul class="chips">
+          <ul class="chips" id="more-services">
             <li>Invisalign</li>
             <li>Emergency Dental</li>
             <li>Dental Implants</li>
@@ -536,7 +615,7 @@ burger.addEventListener('click', () => setMenu(!nav.classList.contains('open')))
 document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
 $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
   const id = a.getAttribute('href'); e.preventDefault();
-  setMenu(false);
+  setMenu(false); a.blur();
   if (id === '#') return;
   const t = id === '#top' ? 0 : $(id); if (t === null) return;
   if (lenis) lenis.scrollTo(t, { duration: 1.4, offset: t ? -nav.offsetHeight : 0 });
@@ -549,22 +628,19 @@ $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
   window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 }
 
-/* ---------- logo marquee, reacts to scroll speed ---------- */
+/* ---------- logo marquee, constant auto-scroll ---------- */
 const mq = $('#marquee'), track = $('#track');
 if (reduce) mq.classList.add('static');
 else {
   [...track.children].forEach(li => { const c = li.cloneNode(true); c.setAttribute('aria-hidden', 'true'); track.append(c); });
-  let mx = 0, dir = 1, boost = 0, slow = 1, lastY = window.scrollY, last = performance.now();
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY, dy = y - lastY; lastY = y;
-    if (dy) { dir = dy > 0 ? 1 : -1; boost = Math.min(boost + Math.abs(dy) * .04, 6); }
-  }, { passive: true });
-  mq.addEventListener('mouseenter', () => { slow = .25; });
-  mq.addEventListener('mouseleave', () => { slow = 1; });
+  let mx = 0, speed = 1, target = 1, last = performance.now();
+  mq.addEventListener('mouseenter', () => { target = .3; });
+  mq.addEventListener('mouseleave', () => { target = 1; });
   const loop = now => {
-    const dt = Math.min(now - last, 50); last = now; boost *= .93;
+    const dt = Math.min(now - last, 50); last = now;
+    speed += (target - speed) * .06;
     if (!document.hidden) {
-      mx -= (1 + boost) * slow * dir * dt * .045;
+      mx -= speed * dt * .05;
       const half = track.scrollWidth / 2 || 1;
       mx = ((mx % half) + half) % half - half;
       track.style.transform = 'translate3d(' + mx + 'px,0,0)';
@@ -587,7 +663,7 @@ if (fine && hasG && !reduce) $$('.mag').forEach(el => {
 if (hasG && !reduce) {
   // hero intro
   const tl = gsap.timeline({ delay: .1 });
-  tl.from('.nav-in > .logo, .nav-l a, .nav-r > *', { y: -18, opacity: 0, duration: .9, ease: 'power3.out', stagger: .04 }, 0)
+  tl.from('.nav-in > .logo, .nav-l > *, .nav-r > *', { y: -18, opacity: 0, duration: .9, ease: 'power3.out', stagger: .04 }, 0)
     .fromTo('.hero', { clipPath: 'inset(3% 3% 0% 3% round 24px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', duration: 1.5, ease: 'expo.inOut' }, .1)
     .from('.hero-img img', { scale: 1.22, duration: 2, ease: 'expo.out' }, .2)
     .from('.hero h1 .m > span', { yPercent: 110, duration: 1.2, ease: 'expo.out', stagger: .08 }, .75)

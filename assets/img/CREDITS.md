@@ -2,9 +2,11 @@
 
 | File | Source | Note |
 |---|---|---|
-| hero.jpg | Clinic photo, 123dentist.com/alberta/calgary-dentist/downtown-dental-calgary gallery (AB-0076-lobby-2.jpg, 1600x1067) | Real lobby; the source the mockup hero was drawn from. |
-| cta.jpg | Clinic photo, same 123Dentist gallery (AB-0076-operatory-5-2025.jpg, 1600x1067) | Real operatory. |
+| hero.jpg | Clinic owner photo on Google Maps (Downtown Dental - Calgary, "By owner", 5119x3413), resized to 2800px | Real lobby under the skylight. The exact mockup angle (lobby-2, coat rack + glass door) only exists at 1800px max. |
+| cta.jpg | Clinic owner photo on Google Maps (7314x4876; same as 123Dentist AB-0076-operatory-5), resized to 2400px | Real operatory. |
 | team.jpg | Supplied by the client/user (2026-10-28), 2048x1365 | Final team photo. |
+| dentists.jpg | downtowndentist.ca home hero (home-page-hero-downtown-dentist-calgary.jpg), right half crop | Dr. Claire Whitney & Dr. Kristin Yont. |
+| services.jpg | Clinic owner photo on Google Maps (7314x4876), resized to 1800px | Treatment room with skylight ceiling. |
 
 # Logo sources (assets/logos/, downloaded 2026-10-28 from each organization's own site)
 

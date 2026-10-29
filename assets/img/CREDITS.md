@@ -2,9 +2,9 @@
 
 | File | Source | Note |
 |---|---|---|
-| hero.jpg | Supplied by the user (2026-10-29), 1536x1024 rendering of the lobby with branded glass door | Previous real-photo hero (Google Maps owner photo) is in git history. |
+| hero.jpg | Supplied by the user (2026-10-29), 1536x1024 lobby rendering with branded glass door | Earlier real-photo heroes are in git history. |
 | cta.jpg | Clinic owner photo on Google Maps (7314x4876; same as 123Dentist AB-0076-operatory-5), resized to 2400px | Real operatory. |
-| team.jpg | Supplied by the client/user (2026-10-28), 2048x1365 | Final team photo. |
+| team.jpg | Supplied by the user (2026-10-29), 2170x379 strip, top 11px white edge trimmed | Shown whole; band is laid out around its 5.9:1 ratio. |
 | dentists.jpg | downtowndentist.ca home hero (home-page-hero-downtown-dentist-calgary.jpg), right half crop | Dr. Claire Whitney & Dr. Kristin Yont. |
 | services.jpg | Clinic owner photo on Google Maps (7314x4876), resized to 1800px | Treatment room with skylight ceiling. |
 

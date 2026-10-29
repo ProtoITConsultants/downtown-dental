@@ -120,7 +120,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .mnav { display: none; }
 
 /* ---------- hero ---------- */
-.hero { position: relative; height: clamp(440px, 40.2vw, 880px); overflow: hidden; background: #3b3a38; color: #fff; }
+.hero { position: relative; height: calc(100vh - var(--nav-h)); height: calc(100svh - var(--nav-h)); min-height: 260px; overflow: hidden; background: #3b3a38; color: #fff; }
 .hero-img { position: absolute; inset: -10% 0 0; }
 .hero-img img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; }
 .hero::after {
@@ -236,7 +236,6 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   .phone .pn { display: none; }
   .phone .pi { display: block; }
   .nav-in .logo img { height: 15px; }
-  .hero { height: min(680px, calc(100svh - var(--nav-h))); }
   .hero-img img { object-position: 30% 50%; }
   .hero::after { background: linear-gradient(0deg, rgba(20, 22, 26, .78) 0%, rgba(20, 22, 26, .4) 55%, rgba(20, 22, 26, .15) 100%); }
   .hero-in { justify-content: flex-end; padding-bottom: 52px; }

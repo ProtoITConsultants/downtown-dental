@@ -155,12 +155,14 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .band-in { position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .band h2 { color: #fff; font-weight: 600; font-size: clamp(36px, 4.2vw, 64px); line-height: 1.04; letter-spacing: -.03em; }
 .band .btn { margin-top: clamp(22px, 2.4vw, 32px); }
-/* team photo is a wide strip: shown whole and untinted, heading + button sit below it */
-.team { background: var(--bg); color: var(--ink); }
-.team .band-img { position: relative; inset: auto; }
-.team .band-img img { height: auto; aspect-ratio: 2170 / 422; min-height: 240px; }
-.team .band-in { padding: clamp(36px, 3.6vw, 56px) 0 clamp(8px, 1vw, 16px); }
-.team h2 { color: var(--ink); }
+/* team: photo fills the band behind the heading (mockup); anchored to the bottom so the crop only trims sky above the heads */
+.team { height: clamp(320px, 28.5vw, 900px); }
+.team .band-img { inset: 0 -10%; } /* 120% wide: the photo scales up and, anchored to the bottom, lifts the faces above the heading */
+.team .band-img img { object-position: 50% 100%; }
+.team::after { background: radial-gradient(ellipse 38% 55% at 50% 72%, rgba(14, 16, 20, .4), rgba(14, 16, 20, 0)), linear-gradient(0deg, rgba(14, 16, 20, .45) 0%, rgba(14, 16, 20, .22) 60%, rgba(14, 16, 20, .12) 100%); }
+.team .band-in { justify-content: flex-end; padding-bottom: clamp(20px, 2vw, 34px); }
+.team .btn { margin-top: clamp(16px, 1.7vw, 26px); }
+.team h2 { text-shadow: 0 2px 22px rgba(0, 0, 0, .35); }
 .cta { height: clamp(260px, 17.5vw, 360px); }
 .cta::after { background: rgba(32, 28, 24, .5); }
 
@@ -387,7 +389,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
     <div class="band-img"><img src="assets/img/team.jpg" alt="The Downtown Dental team" loading="lazy"></div>
     <div class="wrap band-in">
       <h2><span class="m"><span>Calgary’s trusted</span></span><span class="m"><span>dental team.</span></span></h2>
-      <a class="btn dark mag" href="/about-us/meet-the-team/">Meet our team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="btn mag" href="/about-us/meet-the-team/">Meet our team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     </div>
   </section>
 

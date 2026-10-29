@@ -155,12 +155,12 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .band-in { position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .band h2 { color: #fff; font-weight: 600; font-size: clamp(36px, 4.2vw, 64px); line-height: 1.04; letter-spacing: -.03em; }
 .band .btn { margin-top: clamp(22px, 2.4vw, 32px); }
-/* team photo is a wide 5.9:1 strip: show it whole, heading sits on its lower edge */
-.team { --tb: #18232d; background: var(--tb); }
+/* team photo is a wide strip: shown whole and untinted, heading + button sit below it */
+.team { background: var(--bg); color: var(--ink); }
 .team .band-img { position: relative; inset: auto; }
-.team .band-img img { height: auto; aspect-ratio: 2170 / 368; min-height: 220px; object-position: 50% 30%; }
-.team .band-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, var(--tb) 0%, rgba(24, 35, 45, .55) 28%, rgba(24, 35, 45, 0) 55%); }
-.team .band-in { margin-top: clamp(-110px, -5.5vw, -40px); padding-bottom: clamp(44px, 4.4vw, 72px); }
+.team .band-img img { height: auto; aspect-ratio: 2170 / 422; min-height: 240px; }
+.team .band-in { padding: clamp(36px, 3.6vw, 56px) 0 clamp(8px, 1vw, 16px); }
+.team h2 { color: var(--ink); }
 .cta { height: clamp(260px, 17.5vw, 360px); }
 .cta::after { background: rgba(32, 28, 24, .5); }
 
@@ -387,7 +387,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
     <div class="band-img"><img src="assets/img/team.jpg" alt="The Downtown Dental team" loading="lazy"></div>
     <div class="wrap band-in">
       <h2><span class="m"><span>Calgary’s trusted</span></span><span class="m"><span>dental team.</span></span></h2>
-      <a class="btn mag" href="/about-us/meet-the-team/">Meet our team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="btn dark mag" href="/about-us/meet-the-team/">Meet our team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     </div>
   </section>
 
@@ -529,8 +529,9 @@ if (hasG && !reduce) {
 
   // photo bands open up and drift
   $$('.band').forEach(b => {
-    gsap.fromTo(b, { clipPath: 'inset(6% 5% 6% 5% round 28px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', ease: 'none', scrollTrigger: { trigger: b, start: 'top 98%', end: 'top 40%', scrub: true } });
-    if (!b.classList.contains('team')) gsap.fromTo($('.band-img', b), { yPercent: -7 }, { yPercent: 7, ease: 'none', scrollTrigger: { trigger: b, start: 'top bottom', end: 'bottom top', scrub: true } });
+    const team = b.classList.contains('team');
+    gsap.fromTo(b, { clipPath: team ? 'inset(0% 5% 0% 5% round 28px)' : 'inset(6% 5% 6% 5% round 28px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', ease: 'none', scrollTrigger: { trigger: b, start: 'top 98%', end: 'top 40%', scrub: true } });
+    if (!team) gsap.fromTo($('.band-img', b), { yPercent: -7 }, { yPercent: 7, ease: 'none', scrollTrigger: { trigger: b, start: 'top bottom', end: 'bottom top', scrub: true } });
     gsap.from($$('.kicker, .sub, .btn', b), { y: 26, opacity: 0, duration: 1, ease: 'power3.out', stagger: .08, scrollTrigger: { trigger: b, start: 'top 55%' } });
   });
 

@@ -248,6 +248,9 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   .vgrid { grid-template-columns: 1fr; gap: 36px; }
   .v, .v:first-child, .v:last-child { padding: 0; }
   .v + .v::before { display: none; }
+  /* team: taller photo box anchored to the band bottom pushes the faces up, clear of the heading */
+  .team { height: 420px; }
+  .team .band-img { inset: auto 0 0; height: 600px; }
   .lg img { height: calc(var(--h, 36px) * .8); }
   .fgrid { grid-template-columns: 1fr; }
   .fbase { flex-direction: column-reverse; }

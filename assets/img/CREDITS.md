@@ -20,3 +20,19 @@
 | flames.svg | nhl.com/flames, assets.nhle.com/logos/nhl/svg/CGY_dark.svg |
 
 Confirm with the clinic that each affiliation is current before launch (Calgary Flames: "Official Dentist" per downtowndentist.ca).
+
+# Team photography (assets/img/people/, supplied by the client 2026-11-04)
+
+Web-optimised copies. Portraits are uncropped, 800x1200, from the "Web Size" folder (see people/PHOTO-MAP.md). Group and pair shots are 1600x900.
+
+- Not used: IMG_4487 / Group-3 (includes someone outside the team), Zoe_Simona-2 (tongue out).
+- people/unconfirmed/ holds portraits of three staff whose names are not confirmed. They are not used on the site.
+- Phyllis, Cadan, Heather and Deb: not in the supplied shoot, so their portraits come from downtowndentist.ca (500px originals). Replace with new photos if the clinic has them.
+
+# Hero banners (assets/img/heroes/)
+
+Wide 2000x813 versions of client photos. The plain tiled wall is extended to the left so the headline does not sit on faces. The people are not edited.
+
+# Third-party code
+
+- assets/js/lenis.min.js: Lenis 1.3.27 (darkroom.engineering), MIT licence.

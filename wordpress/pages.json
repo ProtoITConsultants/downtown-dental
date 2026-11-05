@@ -1,0 +1,372 @@
+[
+  {
+    "file": "index.html",
+    "url": "https://www.downtowndentist.ca/",
+    "wp_type": "page",
+    "template": "home",
+    "title": "Dentist in Downtown Calgary | Downtown Dental",
+    "meta_description": "Downtown Dental is a modern dental clinic on 9th Avenue SW in downtown Calgary. General, cosmetic, emergency and sports dentistry. New patients welcome.",
+    "h1": "A healthier you starts with a smile.",
+    "redirect_from": null
+  },
+  {
+    "file": "about-us.html",
+    "url": "https://www.downtowndentist.ca/about-us/",
+    "wp_type": "page",
+    "template": "hub",
+    "title": "About Downtown Dental | Dental Clinic in Downtown Calgary",
+    "meta_description": "Downtown Dental connects your lifestyle and goals with a strong foundation for oral health. Meet our experienced team in the core of downtown Calgary.",
+    "h1": "Where lifestyle meets oral health.",
+    "redirect_from": null
+  },
+  {
+    "file": "our-office.html",
+    "url": "https://www.downtowndentist.ca/our-office/",
+    "wp_type": "page",
+    "template": "office",
+    "title": "Our Office Tour | Downtown Dental Calgary",
+    "meta_description": "Tour the Downtown Dental studio, one block west of the Calgary Tower on 9th Avenue SW. Modern, comfortable dental care in downtown Calgary.",
+    "h1": "Our Office",
+    "redirect_from": null
+  },
+  {
+    "file": "meet-our-dentists.html",
+    "url": "https://www.downtowndentist.ca/meet-our-dentists/",
+    "wp_type": "page",
+    "template": "people-listing",
+    "title": "Meet Our Dentists | Downtown Dental Calgary",
+    "meta_description": "Meet Dr. Kristin Yont, Dr. Claire Whitney and Dr. Scott Townsend, the dentists at Downtown Dental in downtown Calgary. Book your visit today.",
+    "h1": "Meet Our Dentists",
+    "redirect_from": "/about-us/meet-our-dentists/"
+  },
+  {
+    "file": "meet-the-team.html",
+    "url": "https://www.downtowndentist.ca/meet-the-team/",
+    "wp_type": "page",
+    "template": "people-listing",
+    "title": "Meet Our Team | Downtown Dental Calgary",
+    "meta_description": "Meet the coordinators, dental hygienists and dental assistants at Downtown Dental in downtown Calgary, and book your next appointment.",
+    "h1": "Meet Our Team",
+    "redirect_from": "/about-us/meet-the-team/"
+  },
+  {
+    "file": "dr-kristin-yont.html",
+    "url": "https://www.downtowndentist.ca/dentists/dr-kristin-yont/",
+    "wp_type": "dentist",
+    "template": "single-dentist",
+    "title": "Dr. Kristin Yont, Dentist in Calgary | Downtown Dental",
+    "meta_description": "Raised on a Saskatchewan farm and a University of Saskatchewan graduate (1998), Dr. Yont has co-owned Downtown Dental for more than two decades. She is…",
+    "h1": "Dr. Kristin Yont",
+    "redirect_from": null
+  },
+  {
+    "file": "dr-claire-whitney.html",
+    "url": "https://www.downtowndentist.ca/dentists/dr-claire-whitney/",
+    "wp_type": "dentist",
+    "template": "single-dentist",
+    "title": "Dr. Claire Whitney, Dentist in Calgary | Downtown Dental",
+    "meta_description": "Dr. Whitney moved to Calgary in 2007 after completing her dental education at the University of Alberta and has practised at Downtown Dental ever…",
+    "h1": "Dr. Claire Whitney",
+    "redirect_from": null
+  },
+  {
+    "file": "dr-scott-townsend.html",
+    "url": "https://www.downtowndentist.ca/dentists/dr-scott-townsend/",
+    "wp_type": "dentist",
+    "template": "single-dentist",
+    "title": "Dr. Scott Townsend, Dentist in Calgary | Downtown Dental",
+    "meta_description": "A 2002 University of Alberta graduate, Dr. Townsend practised as an owner and lead dentist in Tuscany for 17 years. He performs all components of…",
+    "h1": "Dr. Scott Townsend",
+    "redirect_from": null
+  },
+  {
+    "file": "team-karen.html",
+    "url": "https://www.downtowndentist.ca/team/karen/",
+    "wp_type": "team_member",
+    "template": "single-team-member",
+    "title": "Karen, Treatment Coordinator | Downtown Dental Calgary",
+    "meta_description": "I have had the pleasure of working in the dental industry for 21 years and was thrilled to join Downtown Dental in 2024.",
+    "h1": "Karen",
+    "redirect_from": null
+  },
+  {
+    "file": "team-kailyn.html",
+    "url": "https://www.downtowndentist.ca/team/kailyn/",
+    "wp_type": "team_member",
+    "template": "single-team-member",
+    "title": "Kailyn, Hygiene Coordinator | Downtown Dental Calgary",
+    "meta_description": "Born and raised in the Okanagan Valley, Kailyn’s passion for health and wellness led her into dentistry in 2020.",
+    "h1": "Kailyn",
+    "redirect_from": null
+  },
+  {
+    "file": "team-zoe.html",
+    "url": "https://www.downtowndentist.ca/team/zoe/",
+    "wp_type": "team_member",
+    "template": "single-team-member",
+    "title": "Zoe, RDH | Downtown Dental Calgary",
+    "meta_description": "Nineteen years in dentistry: eight as a dental assistant, then eight-plus as a Registered Dental Hygienist.",
+    "h1": "Zoe",
+    "redirect_from": null
+  },
+  {
+    "file": "team-simona.html",
+    "url": "https://www.downtowndentist.ca/team/simona/",
+    "wp_type": "team_member",
+    "template": "single-team-member",
+    "title": "Simona, RDH | Downtown Dental Calgary",
+    "meta_description": "20+ years in dentistry, with a Bachelor’s in dental hygiene from UBC and an MPH from the University of Victoria.",
+    "h1": "Simona",
+    "redirect_from": null
+  },
+  {
+    "file": "team-chantel.html",
+    "url": "https://www.downtowndentist.ca/team/chantel/",
+    "wp_type": "team_member",
+    "template": "single-team-member",
+    "title": "Chantel, RDA | Downtown Dental Calgary",
+    "meta_description": "A Registered Dental Assistant for over twenty years, both in the clinic and as an educator.",
+    "h1": "Chantel",
+    "redirect_from": null
+  },
+  {
+    "file": "team-kiersten.html",
+    "url": "https://www.downtowndentist.ca/team/kiersten/",
+    "wp_type": "team_member",
+    "template": "single-team-member",
+    "title": "Kiersten, RDA | Downtown Dental Calgary",
+    "meta_description": "Over 10 years in general and specialty clinics, bringing a calm, compassionate presence to the dental chair.",
+    "h1": "Kiersten",
+    "redirect_from": null
+  },
+  {
+    "file": "team-jaqueline.html",
+    "url": "https://www.downtowndentist.ca/team/jaqueline/",
+    "wp_type": "team_member",
+    "template": "single-team-member",
+    "title": "Jaqueline, RDA | Downtown Dental Calgary",
+    "meta_description": "A dental assistant for over 36 years, focused on gentle, attentive care.",
+    "h1": "Jaqueline",
+    "redirect_from": null
+  },
+  {
+    "file": "team-phyllis.html",
+    "url": "https://www.downtowndentist.ca/team/phyllis/",
+    "wp_type": "team_member",
+    "template": "single-team-member",
+    "title": "Phyllis, RDA | Downtown Dental Calgary",
+    "meta_description": "Over 30 years in the dental field, helping to create healthy and beautiful smiles.",
+    "h1": "Phyllis",
+    "redirect_from": null
+  },
+  {
+    "file": "team-cadan.html",
+    "url": "https://www.downtowndentist.ca/team/cadan/",
+    "wp_type": "team_member",
+    "template": "single-team-member",
+    "title": "Cadan, Sterilization Assistant | Downtown Dental Calgary",
+    "meta_description": "A UBC Microbiology and Immunology student working toward a future career in dentistry.",
+    "h1": "Cadan",
+    "redirect_from": null
+  },
+  {
+    "file": "team-heather.html",
+    "url": "https://www.downtowndentist.ca/team/heather/",
+    "wp_type": "team_member",
+    "template": "single-team-member",
+    "title": "Heather, RDA | Downtown Dental Calgary",
+    "meta_description": "Born and raised in Calgary, Heather was part of our team of dental assistants for 44 years.",
+    "h1": "Heather",
+    "redirect_from": null
+  },
+  {
+    "file": "team-deb.html",
+    "url": "https://www.downtowndentist.ca/team/deb/",
+    "wp_type": "team_member",
+    "template": "single-team-member",
+    "title": "Deb, RDA | Downtown Dental Calgary",
+    "meta_description": "Deb cared for patients at Downtown Dental for over 30 years. Meet the team at Downtown Dental in downtown Calgary.",
+    "h1": "Deb",
+    "redirect_from": null
+  },
+  {
+    "file": "services.html",
+    "url": "https://www.downtowndentist.ca/services/",
+    "wp_type": "page",
+    "template": "hub",
+    "title": "Dental Services in Calgary | Downtown Dental",
+    "meta_description": "General, cosmetic, emergency, sports and family dentistry, implants, sedation, Invisalign® and more at Downtown Dental in downtown Calgary.",
+    "h1": "Dental Services in Calgary",
+    "redirect_from": "/our-services/"
+  },
+  {
+    "file": "new-patient-experience.html",
+    "url": "https://www.downtowndentist.ca/new-patient-experience/",
+    "wp_type": "page",
+    "template": "service",
+    "title": "New Patients Welcome | Downtown Dental Calgary",
+    "meta_description": "Downtown Dental is accepting new patients in downtown Calgary. Your first visit includes a tour, cleaning, full exam and tailored treatment plan.",
+    "h1": "Dentist Accepting New Patients",
+    "redirect_from": "/our-services/new-patient-experience/"
+  },
+  {
+    "file": "emergency-dentistry.html",
+    "url": "https://www.downtowndentist.ca/emergency-dentistry/",
+    "wp_type": "page",
+    "template": "service",
+    "title": "Emergency Dentist in Calgary | Downtown Dental",
+    "meta_description": "Chipped, broken or knocked-out tooth, or intense tooth pain? Call Downtown Dental in downtown Calgary at (403) 264-1736 and we will fit you in quickly.",
+    "h1": "Emergency Dental Services in Calgary, Alberta",
+    "redirect_from": "/our-services/emergency-dental/"
+  },
+  {
+    "file": "general-dentistry.html",
+    "url": "https://www.downtowndentist.ca/general-dentistry/",
+    "wp_type": "page",
+    "template": "service",
+    "title": "General Dentistry in Calgary | Downtown Dental",
+    "meta_description": "Exams, cleanings, periodontal care, root canals, restorations, dentures and night guards for all ages at Downtown Dental in downtown Calgary.",
+    "h1": "General Dentistry in Calgary",
+    "redirect_from": "/our-services/general-dentistry/"
+  },
+  {
+    "file": "cosmetic-dentistry.html",
+    "url": "https://www.downtowndentist.ca/cosmetic-dentistry/",
+    "wp_type": "page",
+    "template": "service-category",
+    "title": "Cosmetic Dentistry in Calgary | Downtown Dental",
+    "meta_description": "Cosmetic dentistry in downtown Calgary: whitening, Invisalign®, veneers, Botox and bite alignment, only when they are right for your teeth.",
+    "h1": "Cosmetic Dentistry in Calgary",
+    "redirect_from": "/our-services/cosmetic-dentistry/"
+  },
+  {
+    "file": "sports-dentistry.html",
+    "url": "https://www.downtowndentist.ca/sports-dentistry/",
+    "wp_type": "page",
+    "template": "service",
+    "title": "Sports Dentistry & Mouth Guards Calgary | Downtown Dental",
+    "meta_description": "Custom-made sports mouth guards in downtown Calgary from the official dentists of the Calgary Flames. Protect your teeth, gums and more.",
+    "h1": "Sports Dentistry in Calgary",
+    "redirect_from": "/our-services/sport-dentistry/"
+  },
+  {
+    "file": "nightguards-bruxism.html",
+    "url": "https://www.downtowndentist.ca/nightguards-bruxism/",
+    "wp_type": "page",
+    "template": "service",
+    "title": "Night Guards & Bruxism in Calgary | Downtown Dental",
+    "meta_description": "Grinding or clenching your teeth at night? Custom-fitted night guards from Downtown Dental in downtown Calgary protect your teeth, jaw and restorations.",
+    "h1": "Dental Night Guards and Bruxism Treatment in Calgary",
+    "redirect_from": "/our-services/nightguards-bruxism/"
+  },
+  {
+    "file": "dental-surgery.html",
+    "url": "https://www.downtowndentist.ca/dental-surgery/",
+    "wp_type": "page",
+    "template": "service",
+    "title": "Dental Surgery in Calgary | Downtown Dental",
+    "meta_description": "Oral surgical procedures in a dental home you know and trust, in downtown Calgary. Extractions, implants and wisdom teeth, plus specialist referrals.",
+    "h1": "Dental Surgery in Calgary",
+    "redirect_from": "/our-services/dental-surgery/"
+  },
+  {
+    "file": "dental-implants.html",
+    "url": "https://www.downtowndentist.ca/dental-implants/",
+    "wp_type": "page",
+    "template": "service",
+    "title": "Dental Implants in Calgary | Downtown Dental",
+    "meta_description": "Dental implants in downtown Calgary: a comfortable, permanent solution for damaged or missing teeth. Learn if you are a candidate and book a consultation.",
+    "h1": "Dental Implants in Calgary",
+    "redirect_from": "/our-services/dental-implants/"
+  },
+  {
+    "file": "sedation-dentistry.html",
+    "url": "https://www.downtowndentist.ca/sedation-dentistry/",
+    "wp_type": "page",
+    "template": "service",
+    "title": "Sedation Dentistry in Calgary | Downtown Dental",
+    "meta_description": "Nervous about the dentist? Downtown Dental in downtown Calgary offers IV and oral sedation on a case-by-case basis for a calm, comfortable visit.",
+    "h1": "Sedation Dentistry Services in Calgary, Alberta",
+    "redirect_from": "/our-services/sedation-dentistry/"
+  },
+  {
+    "file": "wisdom-teeth-removal.html",
+    "url": "https://www.downtowndentist.ca/wisdom-teeth-removal/",
+    "wp_type": "page",
+    "template": "service",
+    "title": "Wisdom Teeth Removal in Calgary | Downtown Dental",
+    "meta_description": "Same-day wisdom teeth removal in downtown Calgary, with local anesthesia and sedation options. Book a consultation with Downtown Dental.",
+    "h1": "Wisdom Teeth Removal in Calgary, Alberta",
+    "redirect_from": "/our-services/wisdom-teeth/"
+  },
+  {
+    "file": "botox.html",
+    "url": "https://www.downtowndentist.ca/botox/",
+    "wp_type": "page",
+    "template": "service",
+    "title": "Botox & Dysport in Calgary | Downtown Dental",
+    "meta_description": "Botox and Dysport treatments in downtown Calgary, administered by Dr. Claire Whitney at Downtown Dental. Contact us for more details.",
+    "h1": "We offer Botox in Calgary, administered by Dr. Whitney",
+    "redirect_from": "/our-services/botox/"
+  },
+  {
+    "file": "invisalign.html",
+    "url": "https://www.downtowndentist.ca/invisalign/",
+    "wp_type": "page",
+    "template": "service",
+    "title": "Invisalign® in Downtown Calgary | Downtown Dental",
+    "meta_description": "Straighter teeth without metal braces. Downtown Dental offers affordable Invisalign® clear aligner treatment in downtown Calgary. Book a consultation.",
+    "h1": "Your Downtown Calgary Choice for Invisalign® Treatment",
+    "redirect_from": "/our-services/invisalign/"
+  },
+  {
+    "file": "family-dentistry.html",
+    "url": "https://www.downtowndentist.ca/family-dentistry/",
+    "wp_type": "page",
+    "template": "service",
+    "title": "Family Dentist in Downtown Calgary | Downtown Dental",
+    "meta_description": "Comprehensive family dentistry in downtown Calgary for infants, kids, teens, adults and seniors. Beltline, Eau Claire and Mount Royal families welcome.",
+    "h1": "Your Top-Rated Choice for Family Dentistry in Downtown Calgary",
+    "redirect_from": "/our-services/family-dentistry/"
+  },
+  {
+    "file": "canadian-dental-care-plan.html",
+    "url": "https://www.downtowndentist.ca/canadian-dental-care-plan/",
+    "wp_type": "page",
+    "template": "information",
+    "title": "Canadian Dental Care Plan (CDCP) | Downtown Dental Calgary",
+    "meta_description": "What the Canadian Dental Care Plan (CDCP) covers, how co-payments work and what to expect at Downtown Dental in downtown Calgary.",
+    "h1": "What to know about the CDCP",
+    "redirect_from": "/canadian-dental-care-plan-cdcp/"
+  },
+  {
+    "file": "contact-us.html",
+    "url": "https://www.downtowndentist.ca/contact-us/",
+    "wp_type": "page",
+    "template": "contact",
+    "title": "Contact Downtown Dental | Dentist in Downtown Calgary",
+    "meta_description": "Book your visit at Downtown Dental, 215 9 Ave SW #150, Calgary. Call (403) 264-1736 or send us a message. New patients welcome.",
+    "h1": "We welcome new patients.",
+    "redirect_from": null
+  },
+  {
+    "file": "privacy-policy.html",
+    "url": "https://www.downtowndentist.ca/privacy-policy/",
+    "wp_type": "page",
+    "template": "legal",
+    "title": "Privacy Policy | Downtown Dental",
+    "meta_description": "How Downtown Dental collects, uses, protects and retains your personal information, and how to contact us about privacy.",
+    "h1": "Privacy Policy",
+    "redirect_from": null
+  },
+  {
+    "file": "terms-of-use.html",
+    "url": "https://www.downtowndentist.ca/terms-of-use/",
+    "wp_type": "page",
+    "template": "legal",
+    "title": "Terms of Use | Downtown Dental",
+    "meta_description": "The website usage agreement for downtowndentist.ca, the website of Downtown Dental in downtown Calgary.",
+    "h1": "Terms of Use",
+    "redirect_from": null
+  }
+]

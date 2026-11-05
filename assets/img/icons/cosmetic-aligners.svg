@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" role="img" aria-labelledby="t"><title id="t">Invisalign clear aligners illustration</title>
+<style>
+.blob{fill:#a9d4e5;transform-origin:center;transform-box:fill-box;animation:m 9s ease-in-out infinite alternate}
+.blob2{fill:#1079a3;opacity:.10;transform-origin:center;transform-box:fill-box;animation:m 12s ease-in-out infinite alternate-reverse}
+.ln{fill:none;stroke:#3a4347;stroke-width:5.5;stroke-linecap:round;stroke-linejoin:round}
+.sh{fill:none;stroke:#ffffff;stroke-width:5.5;stroke-linecap:round;stroke-linejoin:round;opacity:.9}
+.ac{fill:none;stroke:#1079a3;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round}
+.acf{fill:#1079a3}
+.tw{transform-origin:center;transform-box:fill-box;animation:s 2.6s ease-in-out infinite}
+@keyframes m{0%{transform:rotate(0) scale(1)}100%{transform:rotate(10deg) scale(1.06)}}
+@keyframes s{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+@media (prefers-reduced-motion:reduce){.blob,.blob2,.tw{animation:none}}
+</style>
+<path class="blob2" d="M138 18c24 8 38 32 33 58s-26 50-54 54-56-8-63-34 6-56 30-70 30-16 54-8z" transform="translate(-6 6)"/>
+<path class="blob" d="M128 26c22 6 36 28 32 52s-24 46-50 50-52-8-59-32 6-52 28-64 27-12 49-6z" transform="translate(0 6)"/>
+<rect class="ac" x="42" y="44" width="122" height="70" rx="32" opacity=".55"/><path class="sh" d="M54 60c0-9 6-14 14-14s14 5 14 14v26c0 9-6 16-14 16s-14-7-14-16z" transform="translate(-4 -3)"/><path class="ln" d="M54 60c0-9 6-14 14-14s14 5 14 14v26c0 9-6 16-14 16s-14-7-14-16z"/><path class="sh" d="M86 60c0-9 6-14 14-14s14 5 14 14v26c0 9-6 16-14 16s-14-7-14-16z" transform="translate(-4 -3)"/><path class="ln" d="M86 60c0-9 6-14 14-14s14 5 14 14v26c0 9-6 16-14 16s-14-7-14-16z"/><path class="sh" d="M118 60c0-9 6-14 14-14s14 5 14 14v26c0 9-6 16-14 16s-14-7-14-16z" transform="translate(-4 -3)"/><path class="ln" d="M118 60c0-9 6-14 14-14s14 5 14 14v26c0 9-6 16-14 16s-14-7-14-16z"/><path class="acf tw" d="M164 34l2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5z"/>
+</svg>

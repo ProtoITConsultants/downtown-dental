@@ -16,7 +16,7 @@
     "template": "hub",
     "title": "About Downtown Dental | Dental Clinic in Downtown Calgary",
     "meta_description": "Downtown Dental connects your lifestyle and goals with a strong foundation for oral health. Meet our experienced team in the core of downtown Calgary.",
-    "h1": "Where lifestyle meets oral health.",
+    "h1": "About Us Dentists in Calgary",
     "redirect_from": null
   },
   {
@@ -26,7 +26,7 @@
     "template": "office",
     "title": "Our Office Tour | Downtown Dental Calgary",
     "meta_description": "Tour the Downtown Dental studio, one block west of the Calgary Tower on 9th Avenue SW. Modern, comfortable dental care in downtown Calgary.",
-    "h1": "Our Office",
+    "h1": "Our Office In downtown Calgary",
     "redirect_from": null
   },
   {
@@ -36,7 +36,7 @@
     "template": "people-listing",
     "title": "Meet Our Dentists | Downtown Dental Calgary",
     "meta_description": "Meet Dr. Kristin Yont, Dr. Claire Whitney and Dr. Scott Townsend, the dentists at Downtown Dental in downtown Calgary. Book your visit today.",
-    "h1": "Meet Our Dentists",
+    "h1": "Our Dentists Dentists in Calgary",
     "redirect_from": "/about-us/meet-our-dentists/"
   },
   {
@@ -46,7 +46,7 @@
     "template": "people-listing",
     "title": "Meet Our Team | Downtown Dental Calgary",
     "meta_description": "Meet the coordinators, dental hygienists and dental assistants at Downtown Dental in downtown Calgary, and book your next appointment.",
-    "h1": "Meet Our Team",
+    "h1": "Our Team Downtown Dental, Calgary",
     "redirect_from": "/about-us/meet-the-team/"
   },
   {
@@ -196,7 +196,7 @@
     "template": "hub",
     "title": "Dental Services in Calgary | Downtown Dental",
     "meta_description": "General, cosmetic, emergency, sports and family dentistry, implants, sedation, Invisalign® and more at Downtown Dental in downtown Calgary.",
-    "h1": "Dental Services in Calgary",
+    "h1": "Our Services Dental services in Calgary",
     "redirect_from": "/our-services/"
   },
   {
@@ -206,7 +206,7 @@
     "template": "service",
     "title": "New Patients Welcome | Downtown Dental Calgary",
     "meta_description": "Downtown Dental is accepting new patients in downtown Calgary. Your first visit includes a tour, cleaning, full exam and tailored treatment plan.",
-    "h1": "Dentist Accepting New Patients",
+    "h1": "New Patients New patients in Calgary",
     "redirect_from": "/our-services/new-patient-experience/"
   },
   {
@@ -216,7 +216,7 @@
     "template": "service",
     "title": "Emergency Dentist in Calgary | Downtown Dental",
     "meta_description": "Chipped, broken or knocked-out tooth, or intense tooth pain? Call Downtown Dental in downtown Calgary at (403) 264-1736 and we will fit you in quickly.",
-    "h1": "Emergency Dental Services in Calgary, Alberta",
+    "h1": "Emergency Dental Urgent care in Calgary",
     "redirect_from": "/our-services/emergency-dental/"
   },
   {
@@ -226,7 +226,7 @@
     "template": "service",
     "title": "General Dentistry in Calgary | Downtown Dental",
     "meta_description": "Exams, cleanings, periodontal care, root canals, restorations, dentures and night guards for all ages at Downtown Dental in downtown Calgary.",
-    "h1": "General Dentistry in Calgary",
+    "h1": "General Dentistry In downtown Calgary",
     "redirect_from": "/our-services/general-dentistry/"
   },
   {
@@ -236,7 +236,7 @@
     "template": "service-category",
     "title": "Cosmetic Dentistry in Calgary | Downtown Dental",
     "meta_description": "Cosmetic dentistry in downtown Calgary: whitening, Invisalign®, veneers, Botox and bite alignment, only when they are right for your teeth.",
-    "h1": "Cosmetic Dentistry in Calgary",
+    "h1": "Cosmetic Dentistry In downtown Calgary",
     "redirect_from": "/our-services/cosmetic-dentistry/"
   },
   {
@@ -246,7 +246,7 @@
     "template": "service",
     "title": "Sports Dentistry & Mouth Guards Calgary | Downtown Dental",
     "meta_description": "Custom-made sports mouth guards in downtown Calgary from the official dentists of the Calgary Flames. Protect your teeth, gums and more.",
-    "h1": "Sports Dentistry in Calgary",
+    "h1": "Sports Dentistry Mouth guards in Calgary",
     "redirect_from": "/our-services/sport-dentistry/"
   },
   {
@@ -256,7 +256,7 @@
     "template": "service",
     "title": "Night Guards & Bruxism in Calgary | Downtown Dental",
     "meta_description": "Grinding or clenching your teeth at night? Custom-fitted night guards from Downtown Dental in downtown Calgary protect your teeth, jaw and restorations.",
-    "h1": "Dental Night Guards and Bruxism Treatment in Calgary",
+    "h1": "Night Guards Bruxism care in Calgary",
     "redirect_from": "/our-services/nightguards-bruxism/"
   },
   {
@@ -266,7 +266,7 @@
     "template": "service",
     "title": "Dental Surgery in Calgary | Downtown Dental",
     "meta_description": "Oral surgical procedures in a dental home you know and trust, in downtown Calgary. Extractions, implants and wisdom teeth, plus specialist referrals.",
-    "h1": "Dental Surgery in Calgary",
+    "h1": "Dental Surgery In downtown Calgary",
     "redirect_from": "/our-services/dental-surgery/"
   },
   {
@@ -276,7 +276,7 @@
     "template": "service",
     "title": "Dental Implants in Calgary | Downtown Dental",
     "meta_description": "Dental implants in downtown Calgary: a comfortable, permanent solution for damaged or missing teeth. Learn if you are a candidate and book a consultation.",
-    "h1": "Dental Implants in Calgary",
+    "h1": "Dental Implants In downtown Calgary",
     "redirect_from": "/our-services/dental-implants/"
   },
   {
@@ -286,7 +286,7 @@
     "template": "service",
     "title": "Sedation Dentistry in Calgary | Downtown Dental",
     "meta_description": "Nervous about the dentist? Downtown Dental in downtown Calgary offers IV and oral sedation on a case-by-case basis for a calm, comfortable visit.",
-    "h1": "Sedation Dentistry Services in Calgary, Alberta",
+    "h1": "Sedation Dentistry IV and oral sedation",
     "redirect_from": "/our-services/sedation-dentistry/"
   },
   {
@@ -296,7 +296,7 @@
     "template": "service",
     "title": "Wisdom Teeth Removal in Calgary | Downtown Dental",
     "meta_description": "Same-day wisdom teeth removal in downtown Calgary, with local anesthesia and sedation options. Book a consultation with Downtown Dental.",
-    "h1": "Wisdom Teeth Removal in Calgary, Alberta",
+    "h1": "Wisdom Teeth Removal in Calgary",
     "redirect_from": "/our-services/wisdom-teeth/"
   },
   {
@@ -306,7 +306,7 @@
     "template": "service",
     "title": "Botox & Dysport in Calgary | Downtown Dental",
     "meta_description": "Botox and Dysport treatments in downtown Calgary, administered by Dr. Claire Whitney at Downtown Dental. Contact us for more details.",
-    "h1": "We offer Botox in Calgary, administered by Dr. Whitney",
+    "h1": "Botox By Dr. Whitney in Calgary",
     "redirect_from": "/our-services/botox/"
   },
   {
@@ -316,7 +316,7 @@
     "template": "service",
     "title": "Invisalign® in Downtown Calgary | Downtown Dental",
     "meta_description": "Straighter teeth without metal braces. Downtown Dental offers affordable Invisalign® clear aligner treatment in downtown Calgary. Book a consultation.",
-    "h1": "Your Downtown Calgary Choice for Invisalign® Treatment",
+    "h1": "Invisalign® Clear aligners in Calgary",
     "redirect_from": "/our-services/invisalign/"
   },
   {
@@ -326,7 +326,7 @@
     "template": "service",
     "title": "Family Dentist in Downtown Calgary | Downtown Dental",
     "meta_description": "Comprehensive family dentistry in downtown Calgary for infants, kids, teens, adults and seniors. Beltline, Eau Claire and Mount Royal families welcome.",
-    "h1": "Your Top-Rated Choice for Family Dentistry in Downtown Calgary",
+    "h1": "Family Dentistry For every age in Calgary",
     "redirect_from": "/our-services/family-dentistry/"
   },
   {
@@ -336,7 +336,7 @@
     "template": "information",
     "title": "Canadian Dental Care Plan (CDCP) | Downtown Dental Calgary",
     "meta_description": "What the Canadian Dental Care Plan (CDCP) covers, how co-payments work and what to expect at Downtown Dental in downtown Calgary.",
-    "h1": "What to know about the CDCP",
+    "h1": "The CDCP Canadian Dental Care Plan",
     "redirect_from": "/canadian-dental-care-plan-cdcp/"
   },
   {
@@ -346,7 +346,7 @@
     "template": "contact",
     "title": "Contact Downtown Dental | Dentist in Downtown Calgary",
     "meta_description": "Book your visit at Downtown Dental, 215 9 Ave SW #150, Calgary. Call (403) 264-1736 or send us a message. New patients welcome.",
-    "h1": "We welcome new patients.",
+    "h1": "Contact Us New patients welcome",
     "redirect_from": null
   },
   {
@@ -356,7 +356,7 @@
     "template": "legal",
     "title": "Privacy Policy | Downtown Dental",
     "meta_description": "How Downtown Dental collects, uses, protects and retains your personal information, and how to contact us about privacy.",
-    "h1": "Privacy Policy",
+    "h1": "Privacy Policy Downtown Dental",
     "redirect_from": null
   },
   {
@@ -366,7 +366,7 @@
     "template": "legal",
     "title": "Terms of Use | Downtown Dental",
     "meta_description": "The website usage agreement for downtowndentist.ca, the website of Downtown Dental in downtown Calgary.",
-    "h1": "Terms of Use",
+    "h1": "Terms of Use Downtown Dental",
     "redirect_from": null
   }
 ]

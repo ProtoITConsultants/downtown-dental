@@ -77,7 +77,7 @@ There is no accent colour beyond blue. Don't introduce pink, orange or gradients
 | Role | Spec |
 |---|---|
 | Home H1 | `clamp(34px,4.6vw,66px)` 700, `-.025em`, lh 1.15 (locked) |
-| Page H1 (`.dt-page-hero h1`) | `clamp(32px,3.8vw,56px)` 700, `-.025em` |
+| Page H1 (`.dt-phero h1`) | Identical on every inner page (client request, modelled on Our Office): one short title line `.dt-phero__title` at `clamp(34px,4.6vw,66px)` 700, then the small uppercase `.dt-phero__sub` keyword line (26 characters max). Both are inside the H1. Never let the title wrap to two lines; shorten it instead. |
 | Section title (`.section-title` centred / `.dt-h2` left) | `clamp(26px,1.9vw + 11px,38px)` 700, `-.015em` |
 | H3 (cards) | 19–22px / 28–30px, 700 |
 | Body (`.dt-prose`) | 16px / 28px, `--muted` |
@@ -91,11 +91,11 @@ There is no accent colour beyond blue. Don't introduce pink, orange or gradients
 ### Curves (radius)
 | Token | Value | Use |
 |---|---|---|
-| `--r-pill` | `999px` | All buttons (incl. `.btn--sm` "Read more"), phone pill, chips, sub-nav pills, badges |
-| `--r-lg` | `24px` | Cards, every image and portrait, dialogs, forms, tables, map |
+| `--r-pill` | `999px` | All buttons (incl. `.btn--sm` "Read more"), phone pill, chips, badges, 404 page links |
+| `--r-lg` | `24px` | Cards, every image and portrait, booking card, side card, tables |
 | `--r-md` | `16px` | Dropdown menu (locked), notices |
 | `--r-sm` | `12px` | Form inputs |
-| circle | `50%` | Icon buttons, `.dt-icon`, dialog close |
+| circle | `50%` | Icon buttons, `.dt-book__ic`, `.dt-journey__ic`, `.dt-avatars` |
 
 Full-bleed photo banners (hero, page hero, CTA band) are **square-edged**. Everything
 inside the content width is **rounded**. The client specifically asked for rounded team
@@ -210,6 +210,7 @@ photos and a rounded "Read more" view (the profile page portrait).
 - Images: descriptive `alt` (empty `alt=""` for decorative card thumbnails that sit next to a linked title), `loading="lazy"` below the fold, and the hero image preloaded.
 - Every link to the Contact page goes to `contact-us.html#book` (the booking form); on the Contact page itself those links glide to the form. In WordPress use `/contact-us/#book`.
 - Internal links: every service page links to 3 related services, the services hub and the contact block.
+- Location: map embeds and "Open in Google Maps" use the clinic's Google listing (CID `16009264937890452343`, coordinates 51.04445023621821, -114.0672141826333), never an address search, which pins a competitor next door. Directions buttons use a Google directions link.
 - NAP (name, address, phone) must be identical everywhere: 215 9 Ave SW #150, Calgary, AB T2P 1K3 · (403) 264-1736.
 - Keep `sitemap.xml` and `robots.txt` up to date. In WordPress, let Rank Math or Yoast generate them and add the schema above.
 
@@ -252,7 +253,7 @@ photos and a rounded "Read more" view (the profile page portrait).
 | Options page "Clinic Info" | `clinic_phone`, `clinic_fax`, `clinic_email`, `clinic_address`, `clinic_hours` (repeater), `new_patient_form_url`, social links |
 | CPT `dentist` | `photo`, `name`, `role`, `credentials` (repeater → chips), `bio` (WYSIWYG), `order` |
 | CPT `team_member` | `photo`, `name`, `role`, `group` (Administration / Hygiene / Assisting / Sterilization), `status` (current / retired + note), `excerpt`, `bio`, `order` |
-| Pages (service template) | `hero_image`, `hero_position`, `hero_title`, `hero_eyebrow`, `service_title`, `service_excerpt`, `card_image`, `related_services` (relationship ×3), `form_default_service`, `faq` (repeater q/a → Q&A rows + FAQ schema) |
+| Pages (service template) | `hero_image`, `hero_position`, `hero_title` (short), `hero_subtitle` (keyword line), `service_title`, `service_excerpt`, `card_image`, `related_services` (relationship ×3), `form_default_service`, `faq` (repeater q/a → Q&A rows + FAQ schema) |
 
 **Form:** Elementor Pro Form widget with fields `name`* (text), `phone`* (tel), `email`,
 `service` (select, default per page), `source` (select), `message` (textarea). Add a

@@ -81,15 +81,19 @@
 
     // In-page links: land below the fixed header
     document.addEventListener('click', function(e){
-      var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
-      if(!a) return;
-      var hash = a.getAttribute('href');
+      var a = e.target.closest ? e.target.closest('a[href*="#"]') : null;
+      if(!a || a.target === '_blank') return;
+      var href = a.getAttribute('href'), cut = href.indexOf('#'), hash = href.slice(cut);
+      // links like contact-us.html#book are in-page when we are already on that page
+      if(cut > 0 && a.pathname !== window.location.pathname) return;
       if(hash === '#') return;
       var target = hash === '#top' ? 0 : document.querySelector(hash);
       if(target === null) return;
       e.preventDefault();
       var hdr = (document.querySelector('.site-header') || {}).offsetHeight || 0;
-      lenis.scrollTo(target, {offset: hash === '#top' ? 0 : -hdr, force: true});
+      // targets with scroll-margin-top already account for the header (Lenis applies it)
+      var gap = hash === '#top' || parseFloat(getComputedStyle(target).scrollMarginTop) > 0 ? 0 : -hdr;
+      lenis.scrollTo(target, {offset: gap, force: true});
       if(hash !== '#top' && window.history.pushState) window.history.pushState(null, '', hash);
     });
 

@@ -103,7 +103,7 @@ photos and a rounded "Read more" view (the profile page portrait).
 
 ### Spacing and layout
 - Content width `--wrap: 1180px`, with a 24px gutter (20px at 960px and below).
-- Dimensions match the home page exactly: hero `clamp(560px,40.6vw,772px)`, photo band `clamp(420px,28.8vw,547px)`, CTA `clamp(280px,17.7vw,336px)`. Section rhythm `--sec` is 68px (54px at 960px and below), and the gap under a section heading is 41px (30px). Two light sections in a row collapse the gap between them automatically.
+- Dimensions match the home page, except inner-page heroes are shorter (client request): `clamp(400px,29vw,560px)`, at least 440px on phones. Home hero `clamp(560px,40.6vw,772px)`, photo band `clamp(420px,28.8vw,547px)`, CTA `clamp(280px,17.7vw,336px)`. Section rhythm `--sec` is 68px (54px at 960px and below), and the gap under a section heading is 41px (30px). Two light sections in a row collapse the gap between them automatically.
 - Alternate `--bg` and white (`.dt-section--white`) sections. Never put two white sections in a row.
 - Grid gap 28px. Split gap `clamp(40px,6vw,88px)`.
 - Breakpoints (same as home): 1100px, **960px** (desktop → mobile nav), 600px.
@@ -208,6 +208,7 @@ photos and a rounded "Read more" view (the profile page portrait).
 - JSON-LD `@graph`: `Dentist` (`#dentist`: NAP, hours, new patients) + `WebSite` + `WebPage` (or `MedicalWebPage` / `AboutPage` / `ContactPage` / `CollectionPage`) + `BreadcrumbList`. Service pages add `Service`. Q&A pages add `FAQPage`. Profile pages add `Person` (the dentists listing lists all three).
 - Visible breadcrumbs that match the schema.
 - Images: descriptive `alt` (empty `alt=""` for decorative card thumbnails that sit next to a linked title), `loading="lazy"` below the fold, and the hero image preloaded.
+- Every link to the Contact page goes to `contact-us.html#book` (the booking form); on the Contact page itself those links glide to the form. In WordPress use `/contact-us/#book`.
 - Internal links: every service page links to 3 related services, the services hub and the contact block.
 - NAP (name, address, phone) must be identical everywhere: 215 9 Ave SW #150, Calgary, AB T2P 1K3 · (403) 264-1736.
 - Keep `sitemap.xml` and `robots.txt` up to date. In WordPress, let Rank Math or Yoast generate them and add the schema above.

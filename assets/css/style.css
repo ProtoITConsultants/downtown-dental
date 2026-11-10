@@ -309,13 +309,14 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /* ---------- 2.4 Page hero (inner pages)
    Same design as the approved home hero: photo with the navy wash, white text,
    parallax photo layer, copy that drifts and fades. Breadcrumb above the H1. ---------- */
-.dt-phero{position:relative;height:clamp(560px,40.6vw,772px);display:flex;align-items:center;color:#fff;background:#4a5560}
+.dt-phero{position:relative;height:clamp(400px,29vw,560px);display:flex;align-items:center;color:#fff;background:#4a5560}
 .dt-phero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,34,50,.72),rgba(4,34,50,.42) 55%,rgba(4,34,50,.22))}
 .dt-phero .wrap{position:relative}
 .dt-phero img.dt-parallax__media{width:100%;height:100%;object-fit:cover}
-.dt-phero h1{margin:0 0 36px;max-width:820px;font-weight:700;letter-spacing:-.025em;line-height:1.15;font-size:clamp(34px,4.6vw,66px)}
+.dt-phero h1{margin:0 0 26px;max-width:820px;font-weight:700;letter-spacing:-.025em;line-height:1.15;font-size:clamp(34px,4.6vw,66px)}
+.dt-phero--right img.dt-parallax__media{object-position:center 28%!important}
 .dt-phero--right h1{max-width:570px;font-size:clamp(32px,3.3vw,50px)}
-.dt-phero .dt-crumbs{margin-bottom:24px}
+.dt-phero .dt-crumbs{margin-bottom:18px}
 .dt-crumbs{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:6px 0;font-size:13px}
 .dt-crumbs li+li::before{content:"/";margin:0 9px;opacity:.6}
 .dt-crumbs a:hover{text-decoration:underline;text-underline-offset:3px}
@@ -544,6 +545,8 @@ html.lenis{scroll-behavior:auto}
 .dt-notice svg{flex:none;width:22px;height:22px;color:var(--blue);margin-top:1px}
 .dt-notice a{color:var(--blue);font-weight:700;text-decoration:underline;text-underline-offset:3px}
 
+#book{scroll-margin-top:var(--header-h)}
+
 /* ---------- 2.16 Booking card (blue info panel + form) ---------- */
 .dt-book{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);border-radius:var(--r-lg);background:var(--white);border:1px solid var(--card-line);box-shadow:var(--shadow-card)}
 .dt-book__info{position:relative;overflow:hidden;border-radius:var(--r-lg) 0 0 var(--r-lg);padding:clamp(32px,4vw,56px);background:var(--blue);color:#fff}
@@ -686,11 +689,11 @@ html.lenis{scroll-behavior:auto}
   .dt-layout{grid-template-columns:1fr}
   .dt-aside{position:static}
   .dt-qa__row{grid-template-columns:1fr;gap:14px;padding:32px 0}
-  .dt-phero{align-items:flex-end}
-  .dt-phero .wrap{padding-bottom:52px}
+  .dt-phero{height:auto;min-height:440px;align-items:flex-end;padding-top:130px}
+  .dt-phero .wrap{padding-bottom:40px}
   .dt-phero::before{background:linear-gradient(180deg,rgba(4,34,50,.12) 20%,rgba(4,34,50,.78) 72%)}
   .dt-phero--right img.dt-parallax__media{object-position:72% center!important}
-  .dt-phero h1{margin-bottom:26px}
+  .dt-phero h1{margin-bottom:20px}
   .dt-phero .dt-crumbs{margin-bottom:16px;font-size:12.5px}
   .dt-book{grid-template-columns:1fr}
   .dt-book__info{border-radius:var(--r-lg) var(--r-lg) 0 0}

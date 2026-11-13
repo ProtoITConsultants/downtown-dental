@@ -10,9 +10,6 @@ Portraits from the client "Web Size" folder (no cropping, 800x1200).
 | dr-kristin-yont.jpg | IMG_4289.jpg |
 | dr-kristin-yont-2.jpg | IMG_3941.jpg |
 | dr-kristin-yont-3.jpg | IMG_3933.jpg |
-| dr-scott-townsend.jpg | IMG_4175.jpg |
-| dr-scott-townsend-2.jpg | IMG_4191.jpg |
-| dr-scott-townsend-3.jpg | IMG_4199.jpg |
 | jaqueline.jpg | IMG_3894.jpg |
 | jaqueline-2.jpg | IMG_3896.jpg |
 | kiersten.jpg | IMG_3906.jpg |
@@ -35,7 +32,6 @@ Portraits from the client "Web Size" folder (no cropping, 800x1200).
 | zoe-3.jpg | IMG_4068.jpg |
 | dr-claire-whitney-4.jpg | IMG_3837.jpg |
 | dr-kristin-yont-4.jpg | IMG_3929.jpg |
-| dr-scott-townsend-4.jpg | IMG_4188.jpg |
 | kiersten-4.jpg | IMG_3904.jpg |
 | chantel-4.jpg | IMG_3971.jpg |
 | karen-4.jpg | IMG_4005.jpg |
@@ -57,3 +53,11 @@ Portraits from the client "Web Size" folder (no cropping, 800x1200).
 | cadan.jpg | Cadan-Mahan-1.jpg |
 | heather.jpg | Heather-Murray-RDA.jpg |
 | deb.jpg | Deb-Macphee-rda.jpg |
+
+## Dr. Scott Townsend
+
+| Site file | Original photo |
+|---|---|
+| dr-scott-townsend.jpg | dr-scott-townsend-org.jpg (supplied by the client, 350x435, upscaled) |
+
+The "Dr-Scott-Townsend" files in the shoot folder show a different man. They are in unconfirmed/ as staff-d-*.

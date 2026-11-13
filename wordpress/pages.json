@@ -368,5 +368,16 @@
     "meta_description": "The website usage agreement for downtowndentist.ca, the website of Downtown Dental in downtown Calgary.",
     "h1": "Terms of Use Downtown Dental",
     "redirect_from": null
+  },
+  {
+    "file": "blog.html",
+    "url": "https://www.downtowndentist.ca/blog/",
+    "wp_type": "page",
+    "template": "blog",
+    "title": "Blog | Downtown Dental Calgary",
+    "meta_description": "Dental tips and news from the Downtown Dental team in downtown Calgary. Our first articles are coming soon.",
+    "h1": "Blog Dental tips from Calgary",
+    "redirect_from": null,
+    "note": "WordPress posts page. noindex and out of the sitemap until the first post is published, then switch to index and add it to the sitemap."
   }
 ]

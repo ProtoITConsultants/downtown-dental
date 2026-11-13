@@ -15,7 +15,7 @@ only from its tokens and patterns. The result must feel like one site.
    The only addition (client request, 2026-11-05) is scroll motion: parallax photo layers on
    the hero, team and CTA banners, plus `.dt-reveal` on the section titles, features and logo
    row. Before any scrolling, the page must still look exactly like the approved design.
-   The open mobile menu also uses smaller text (15.5px rows, 14px links), set in Part 2. Main nav (client request): left of the logo Home and Services; right of the logo About and Contact Us. The About dropdown and mobile accordion list About Us, Meet Our Dentists, Our Team and Our Office.
+   The open mobile menu also uses smaller text (15.5px rows, 14px links), set in Part 2. Main nav (client request): left of the logo Home and Services; right of the logo About and Contact Us. The About dropdown and mobile accordion list About Us, Meet Our Dentists, Our Team, Our Office and Blog.
 2. **One stylesheet, one script.** Every page loads `assets/css/style.css`, the vendored
    `assets/js/lenis.min.js` (smooth scrolling, Lenis 1.3.27, MIT) and `assets/js/main.js`, and nothing else (plus Google Fonts). Don't add per-page CSS files,
    `<style>` blocks or inline scripts. Inline `style` is allowed only for a background image,
@@ -196,6 +196,7 @@ photos and a rounded "Read more" view (the profile page portrait).
 - **Service (category style, e.g. Cosmetic):** hero › centred intro (`.dt-head--wide`) › `.dt-flist` feature rows with illustrations › parallax `.dt-band` statement › related services › contact block.
 - **Service:** hero (eyebrow "Dental services in Calgary") › `.dt-layout` (main content + sticky aside) › "Explore more services" (3 related cards) › contact block (`#book`, form preselected for that service). No CTA band, because the form replaces it.
 - **Information (CDCP):** hero › `.dt-layout` with prose, checklist, table, notice › CTA band.
+- **Blog (`blog.html`, template `blog`):** hero › section head › 3-column post cards (`.dt-svc`, `data-cpt="post"`) › CTA band. Until the first post is live, cards show a Coming soon badge and the page is `noindex` and out of the sitemap. In WordPress it is the posts page; post cards map to the loop (featured image, title, excerpt, link).
 - **Contact:** hero › booking card (the map is in the footer).
 - **Legal:** hero › `.dt-legal` prose (max 820px) › CTA band.
 

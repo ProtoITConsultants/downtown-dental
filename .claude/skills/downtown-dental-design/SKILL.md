@@ -15,7 +15,7 @@ only from its tokens and patterns. The result must feel like one site.
    The only addition (client request, 2026-11-05) is scroll motion: parallax photo layers on
    the hero, team and CTA banners, plus `.dt-reveal` on the section titles, features and logo
    row. Before any scrolling, the page must still look exactly like the approved design.
-   The open mobile menu also uses smaller text (15.5px rows, 14px links), set in Part 2. The About menus list About Us, Meet Our Dentists and Our Office; Meet The Team is reached through Our Team in the main nav (client request).
+   The open mobile menu also uses smaller text (15.5px rows, 14px links), set in Part 2. Main nav (client request): left of the logo Home and Services; right of the logo About and Contact Us. The About dropdown and mobile accordion list About Us, Meet Our Dentists, Our Team and Our Office.
 2. **One stylesheet, one script.** Every page loads `assets/css/style.css`, the vendored
    `assets/js/lenis.min.js` (smooth scrolling, Lenis 1.3.27, MIT) and `assets/js/main.js`, and nothing else (plus Google Fonts). Don't add per-page CSS files,
    `<style>` blocks or inline scripts. Inline `style` is allowed only for a background image,

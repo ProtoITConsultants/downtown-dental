@@ -718,7 +718,8 @@ html.lenis{scroll-behavior:auto}
   .dt-grid--2,.dt-grid--3,.dt-grid--4{grid-template-columns:1fr}
   .dt-grid--people{grid-template-columns:repeat(2,1fr);gap:24px 16px}
   .dt-grid--people .dt-person p{display:none}
-  .dt-grid--people .dt-person .dt-more{margin-top:14px}
+  .dt-grid--people .dt-person .dt-role{margin-bottom:14px}
+  .dt-grid--people .dt-person .dt-more{margin-top:auto}
   .dt-grid--people .dt-person h3{font-size:16px;line-height:22px}
   .dt-checklist--2{grid-template-columns:1fr}
   .dt-card{padding:28px 24px}

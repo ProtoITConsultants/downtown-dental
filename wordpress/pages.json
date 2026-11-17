@@ -80,6 +80,16 @@
     "redirect_from": null
   },
   {
+    "file": "team-sharri.html",
+    "url": "https://www.downtowndentist.ca/team/sharri/",
+    "wp_type": "team_member",
+    "template": "single-team-member",
+    "title": "Sharri Harms, Office Manager | Downtown Dental Calgary",
+    "meta_description": "Sharri Harms joined Downtown Dental in 2009 and is now our Office Manager in downtown Calgary. Contact our team to book your visit.",
+    "h1": "Sharri Harms",
+    "redirect_from": null
+  },
+  {
     "file": "team-karen.html",
     "url": "https://www.downtowndentist.ca/team/karen/",
     "wp_type": "team_member",

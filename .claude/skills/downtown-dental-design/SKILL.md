@@ -36,7 +36,7 @@ index.html                       Home (locked)
 about-us.html                    About hub
 meet-our-dentists.html  meet-the-team.html  our-office.html   (listings: card grid + "Read more")
 dr-kristin-yont.html  dr-claire-whitney.html  dr-scott-townsend.html   (dentist profiles)
-team-<firstname>.html ×11                                            (team profiles)
+team-<firstname>.html ×12                                            (team profiles)
 services.html                    Services hub (all 14 service cards)
 new-patient-experience.html  emergency-dentistry.html  general-dentistry.html
 cosmetic-dentistry.html  sports-dentistry.html  nightguards-bruxism.html
@@ -268,7 +268,8 @@ animation. Never use both.
 ## 8. Open content items (confirm with the clinic)
 - Insurance wording: the site says "we accept all insurance" and also "we do not direct bill".
 - Clinic hours (the live site's hours block is broken; the mock-ups use Mon–Fri 7:00–2:30).
-- Names of the three staff in `people/unconfirmed/`. Higher-resolution portraits of Phyllis, Cadan, Heather and Deb (currently 500px originals from the live site).
+- New staff headshots are being shot Nov 23–24, 2026. Until they arrive, keep the current photos. Swapping them in is a separate task: process them to the photo rules above and replace the files in `assets/img/people/` (same file names, so the pages need no edits), then update `PHOTO-MAP.md`.
+- Names of the two remaining staff in `people/unconfirmed/` (staff-a is Sharri Harms, Office Manager, now on the site as `sharri.jpg`). Higher-resolution portraits of Phyllis, Cadan, Heather and Deb (currently 500px originals from the live site).
 - New Patient Form URL. Whether Heather and Deb stay listed (currently shown as retired).
 - The CDCP content is dated August 27, 2024. Recheck it against current federal rules.
 - Privacy contact privacy@123dentist.com (network address) is used as-is.

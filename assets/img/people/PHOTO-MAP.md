@@ -38,6 +38,7 @@ Portraits from the client "Web Size" folder (no cropping, 800x1200).
 | kailyn-4.jpg | IMG_4039.jpg |
 | simona-4.jpg | IMG_4053.jpg |
 | zoe-4.jpg | IMG_4084.jpg |
+| sharri.jpg | SH_1.jfif (client upload, 1920x2351; cropped to 2:3, centred on Sharri). Same shoot as IMG_3874: unconfirmed/staff-a-* is Sharri Harms, Office Manager (confirmed 2026-11-17) |
 | unconfirmed/staff-a-blonde-black-blazer.jpg | IMG_3874.jpg |
 | unconfirmed/staff-a-blonde-black-blazer-2.jpg | IMG_3861.jpg |
 | unconfirmed/staff-b-black-hair-navy-scrubs.jpg | IMG_4099.jpg |
